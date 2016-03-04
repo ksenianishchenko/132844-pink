@@ -6,7 +6,154 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="main-header">
+        <div class="main-header__logo">
+            <img src="img/logo.svg" width="75" height="22" title="Логотип компании" alt="Логотип компании"/>
+        </div>
+        <nav class="main-nav">
+            <span class="main-nav__toggle main-nav__toggle--close">Открыть меню</span>
+            <div class="main-nav__wrapper main-nav__wrapper--closed">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item main-nav__item--active">Информация</li>
+                    <li class="main-nav__item"><a href="#0">Возможности</a></li>
+                    <li class="main-nav__item"><a href="#0">Отзывы</a></li>
+                    <li class="main-nav__item"><a href="#0">Стоимость</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
+    <main>
+        <section class="intro">
+            <div class="intro-top">
+                <div class="intro-top__header">Взгляните на жизнь иначе!</div>
+            </div>
+            </div class="intro-bottom">
+                <div class="intro-bottom__button">
+                    <a href="#0">Скачать приложение</a>
+                </div>
+                <div class="intro-bottom__icons">
+                    <div class="intro-bottom__icon intro-bottom__icon--apple"></div>
+                    <div class="intro-bottom__icon intro-bottom__icon--android"></div>
+                    <div class="intro-bottom__icon intro-bottom__icon--windows"></div>
+                </div>
+                <p class="intro-bottom__text">
+                    Доступно для iPHone, iPad, Android, Windows Phone, OS X, Windows 8
+                </p>
+            </div>
+        </section>
+        <section class="main-info">
+            <div class="main-info__top">
+                <p class="subtitle">
+                    Устали от серости мегаполиса?
+                </p>
+                <p class="subtitle">
+                    Нам есть, что вам предложить!
+                </p>
+            </div>
+            <div class="main-info__bottom">
+                <div class="short-info">
+                    <div class="short-info__title">
+                        Поднимает настроение
+                    </div>
+                    <div class="short-info__text">
+                        Приложение позволит вам победить 
+                        осеннюю хандру и деперессию
+                        буквально в несколько кликов!
+                    </div>
+                </div>
+                <div class="short-info">
+                    <div class="short-info__title">
+                        Меняет мир вокруг
+                    </div>
+                    <div class="short-info__text">
+                        Сделайте снимок и украсьте его
+                        смайликом или текстовой подписью,
+                        чтобы усилить эффект
+                    </div>
+                </div>
+                <div class="short-info">
+                    <div class="short-info__title">
+                        Заводит новых друзей
+                    </div>
+                    <div class="short-info__text">
+                        Ставьте лайки, комментируте, делитесь 
+                        фотографиями с друзьями и заводите 
+                        новых
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reivews">
+            <div class="reivews__wrapper">
+                <div class="reivews__title">
+                    Николай Петров
+                </div>
+                <div class="reivews__text">
+                    &laquo;Это приложение перевернуло мой мир
+                    и позволило по&ndash;новому взглянуть на 
+                    привычные серые вещи! А еще я 
+                    познакомился со своей будующей женой
+                    в комментариях к выложенной фотографии!&raquo;
+                </div>
+                <div class="slider-nav">
+                    <label>
+                        <input class="slider-nav__switcher" type="radio" name="reivews" checked>
+                    </label>
+                    <label>
+                        <input class="slider-nav__switcher" type="radio" name="reivews">
+                    </label>
+                    <label>
+                        <input class="slider-nav__switcher" type="radio" name="reivews">
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section class="price">
+            <div class="price__wrapper">
+                <div class="price__item">
+                    <div class="price__package">
+                        <span class="price__name">Стандарт</span>
+                        3,99 USD
+                    </div>
+                    <ul class="price__list">
+                        <li class="price__offer price__offer--filter">Розовый фильтр</li>
+                        <li class="price__offer price__offer--smile">Смайлики</li>
+                        <li class="price__offer price__offer--comments">Комментарии</li>
+                    </ul>
+                </div>
+                <div class="slider-nav">
+                    <label>
+                        <input class="slider-nav__switcher" type="radio" name="reivews" checked>
+                    </label>
+                    <label>
+                        <input class="slider-nav__switcher" type="radio" name="reivews">
+                    </label>
+                    <label>
+                        <input class="slider-nav__switcher" type="radio" name="reivews">
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact__title">
+                Устали от серости мегаполиса?
+            </div>
+            <div class="contact__phone">
+                Звоните:
+                <span>+7 (812) 555-66-66</span>
+            </div>
+            <div class="contact__email">
+                Пишите:
+                <span>mail@htmlacademy.ru</span>
+            </div>
+            <div class="contact__address">
+                Приезжайте в гости:
+                <span>ул. Большая Конюшенная, 19/8</span>
+            </div>
+            <div class="contact__map">
+            </div>
+        </section>
+    </main>
   </body>
 </html>
