@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Форма</title>
+  </head>
+  <body>
+
+    <header class="main-header">
+        <div class="main-header__wrapper">
+            <div class="main-header__logo">
+                <a href="#0" class="main-header__link"><img src="img/logo.svg" width="75" height="22" title="Логотип компании" alt="Логотип компании"/></a>
+            </div>
+            <nav class="main-nav">
+                <span class="main-nav__toggle main-nav__toggle--close">Открыть меню</span>
+                <div class="main-nav__wrapper main-nav__wrapper--closed">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+                        <li class="main-nav__item"><a href="photo.html">Фотографии</li>
+                        <li class="main-nav__item main-nav__item--active">Конкурс</li>
+                        <li class="main-nav__item"><a href="#0">HTML Academy</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main-header__subtitle">Конкурс на самое безбашеное путешествие с Пинк</div>
+        </div>
+    </header>
+
+    <main>
+        <form class="form">
+            <div class="form__wrapper">
+                <div class="form__title">
+                    Поделитесь своей историей и получите 
+                    шанс выиграть ценный приз &mdash; 1000 
+                    миль на вашу бонусную карту!
+                </div>
+                <div class="form__user-info">
+                    <label>
+                        <span class="form__input-title">Имя:</span>
+                        <input class="form__item" type="text" name="name" value="Введите ваше имя">
+                    </label>
+                    <label>
+                        <span class="form__input-title">Фамилия:</span>
+                        <input class="form__item" type="text" name="name" value="Укажите фамилию">
+                    </label>
+                    <label>
+                        <span class="form__input-title">Отчество:</span>
+                        <input class="form__item" type="text" name="name" value="Ну и отчество тоже">
+                    </label>
+                </div>
+                <div class="form__progress">
+                    <div class="form__input-title">
+                        Ваши безбашенные 
+                        достижения в путешествии
+                    </div>
+                    <label>
+                        <input class="form__checkbox" type="checkbox" name="shark" checked>
+                        Сделал селфи с акулой
+                    </label>
+                    <label>
+                        <input class="form__checkbox" type="checkbox" name="san-tan" checked>
+                        Обгорел на пляже
+                    </label>
+                    <label>
+                        <input class="form__checkbox" type="checkbox" name="chak-noris">
+                        Видел Чака Норриса
+                    </label>
+                    <label>
+                        <input class="form__checkbox" type="checkbox" name="souvenirs">
+                        Накупил сувениров
+                    </label>
+                    <label>
+                        <input class="form__checkbox" type="checkbox" name="tower" checked>
+                        Удержал башню
+                    </label>
+                    <label>
+                        <input class="form__checkbox" type="checkbox" name="hotel">
+                        Разгромил отель
+                    </label>
+                </div>
+                <div class="form__user-contacts">
+                    <label>
+                        <span class="form__input-title">Номерок телефончика</span>
+                        <input class="form__item" type="tel" name="phone" value="Номер, пожалуйста">
+                    </label>
+                    <label>
+                        <span class="form__input-title">Адресок почты</span>
+                        <input class="form__item" type="email" name="email" value="E&ndash;mail, пожалуйста">
+                    </label>
+                </div>
+                <div class="form__user-app">
+                    <div class="form__input-title">
+                        С каким приложением 
+                        путешествовали?
+                    </div>
+                    <label>
+                        <input class="form__radio" type="radio" name="app" checked>
+                        Pink для iOS
+                    </label>
+                    <label>
+                        <input class="form__radio" type="radio" name="app">
+                        Pink для Android
+                    </label>
+                    <label>
+                        <input class="form__radio" type="radio" name="app">
+                        Windows Phone
+                    </label>
+                </div>
+                <div class="form__emotions">
+                    <label>
+                        <span class="form__input-title">Опишите свои эмоции</span>
+                        <textarea class="form__item" rows="5" cols="45" name="comments">Можно прям в красках, не стесняясь в выражениях</textarea>
+                    </label>
+                </div>
+                <input class="form__submit" type="submit" value="Отправить форму">
+                <div class="form__required">
+                    &mdash; обязательные поля
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer class="main-footer">
+        <div class="main-footer__wrapper">
+            <section="main-footer__logo">
+                <div class=logo">
+                    <a href="index.html">
+                        <img src="img/f_logo.svg" width="147" height="40" title="Логотип компании" alt="Логотип компании"/>
+                    </a>
+                </div>
+            </section>
+            <section class="main-footer__social">
+                <div class="social-icons">
+                    <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                    <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</
+                    <a class="social-link social-link--inst" href="https://www.instagram.com/htmlacademy">Мы в Инст
+                </div>
+            </section>
+            <section class="page-footer__copyright">
+                Разработано:
+                <a class="page-footer__copyright-link btn" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</
+            </section>
+        </div>
+    </footer>
+
+  </body>
+</html>
