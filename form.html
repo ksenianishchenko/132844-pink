@@ -29,88 +29,110 @@
     <main>
         <form class="form">
             <div class="form__wrapper">
-                <div class="form__title">
+                <div class="page__subtitle">
                     Поделитесь своей историей и получите 
                     шанс выиграть ценный приз &mdash; 1000 
                     миль на вашу бонусную карту!
                 </div>
-                <div class="form__user-info">
-                    <label>
-                        <span class="form__input-title">Имя:</span>
+                <div class="form__set form__set--color1">
+                    <div class="form__set-item">
+                        <label class="form__input-title form__input-title--left">Имя:</label>
                         <input class="form__item" type="text" name="name" value="Введите ваше имя">
-                    </label>
-                    <label>
-                        <span class="form__input-title">Фамилия:</span>
+                    </div>
+                    <div class="form__set-item">
+                        <label class="form__input-title form__input-title--left">Фамилия:</label>
                         <input class="form__item" type="text" name="name" value="Укажите фамилию">
-                    </label>
-                    <label>
-                        <span class="form__input-title">Отчество:</span>
+                    </div>
+                    <div class="form__set-item">
+                        <label class="form__input-title form__input-title--left">Отчество:</label>
                         <input class="form__item" type="text" name="name" value="Ну и отчество тоже">
-                    </label>
+                    </div>
                 </div>
-                <div class="form__progress">
-                    <div class="form__input-title">
+                <div class="form__set form__set--color2">
+                    <div class="form__input-title form__input-title--center"> 
                         Ваши безбашенные 
                         достижения в путешествии
                     </div>
-                    <label>
-                        <input class="form__checkbox" type="checkbox" name="shark" checked>
-                        Сделал селфи с акулой
-                    </label>
-                    <label>
-                        <input class="form__checkbox" type="checkbox" name="san-tan" checked>
-                        Обгорел на пляже
-                    </label>
-                    <label>
-                        <input class="form__checkbox" type="checkbox" name="chak-noris">
-                        Видел Чака Норриса
-                    </label>
-                    <label>
-                        <input class="form__checkbox" type="checkbox" name="souvenirs">
-                        Накупил сувениров
-                    </label>
-                    <label>
-                        <input class="form__checkbox" type="checkbox" name="tower" checked>
-                        Удержал башню
-                    </label>
-                    <label>
-                        <input class="form__checkbox" type="checkbox" name="hotel">
-                        Разгромил отель
-                    </label>
+                    <ul class="form__checkbox-list">
+                        <li class="form__checkbox-item">
+                            <label> 
+                                <input class="form__checkbox" type="checkbox" name="shark" checked>
+                                Сделал селфи с акулой
+                            </label>
+                        </li>
+                        <li class="form__checkbox-item">
+                            <label>
+                                <input class="form__checkbox" type="checkbox" name="san-tan" checked>
+                                Обгорел на пляже
+                            </label>
+                        </li>
+                        <li class="form__checkbox-item">
+                            <label>
+                                <input class="form__checkbox" type="checkbox" name="chak-noris">
+                                Видел Чака Норриса
+                            </label>
+                        </li>
+                        <li class="form__checkbox-item">
+                            <label>
+                                <input class="form__checkbox" type="checkbox" name="souvenirs">
+                                Накупил сувениров
+                            </label>
+                        </li>
+                        <li class="form__checkbox-item">
+                            <label>
+                                <input class="form__checkbox" type="checkbox" name="tower" checked>
+                                Удержал башню
+                            </label>
+                        </li>
+                        <li class="form__checkbox-item">
+                            <label>
+                                <input class="form__checkbox" type="checkbox" name="hotel">
+                                Разгромил отель
+                            </label>
+                        </li>
+                    </ul>
                 </div>
-                <div class="form__user-contacts">
-                    <label>
-                        <span class="form__input-title">Номерок телефончика</span>
+                <div class="form__set form__set--color1">
+                     <div class="form__set-item">
+                        <label class="form__input-title form__input-title--left">Номерок телефончика</label>
                         <input class="form__item" type="tel" name="phone" value="Номер, пожалуйста">
-                    </label>
-                    <label>
-                        <span class="form__input-title">Адресок почты</span>
+                    </div>
+                    <div class="form__set-item">
+                        <label class="form__input-title form__input-title--left">Адресок почты</label>
                         <input class="form__item" type="email" name="email" value="E&ndash;mail, пожалуйста">
-                    </label>
+                    </div>
                 </div>
-                <div class="form__user-app">
-                    <div class="form__input-title">
+                <div class="form__set form__set--color2">
+                    <div class="form__input-title form__input-title--center">
                         С каким приложением 
                         путешествовали?
                     </div>
-                    <label>
-                        <input class="form__radio" type="radio" name="app" checked>
-                        Pink для iOS
-                    </label>
-                    <label>
-                        <input class="form__radio" type="radio" name="app">
-                        Pink для Android
-                    </label>
-                    <label>
-                        <input class="form__radio" type="radio" name="app">
-                        Windows Phone
-                    </label>
+                    <ul class="form__radio-list">
+                        <li class="form__radio-item">
+                            <label>
+                                <input class="form__radio" type="radio" name="app" checked>
+                                Pink для iOS
+                            </label>
+                        </li>
+                        <li class="form__radio-item">
+                            <label>
+                                <input class="form__radio" type="radio" name="app">
+                                Pink для Android
+                            </label>
+                        </li>
+                        <li class="form__radio-item">
+                            <label>
+                                <input class="form__radio" type="radio" name="app">
+                                Windows Phone
+                            </label>
+                        </li>
+                    </ul>
                 </div>
-                <div class="form__emotions">
-                    <label>
-                        <span class="form__input-title">Опишите свои эмоции</span>
+                <div class="form__set form__set--color1">
+                    <div class="form__set-item">
+                        <label class="form__input-title form__input-title--center">Опишите свои эмоции</label>
                         <textarea class="form__item" rows="5" cols="45" name="comments">Можно прям в красках, не стесняясь в выражениях</textarea>
-                    </label>
+                    </div>
                 </div>
                 <input class="form__submit" type="submit" value="Отправить форму">
                 <div class="form__required">
@@ -123,22 +145,20 @@
     <footer class="main-footer">
         <div class="main-footer__wrapper">
             <section="main-footer__logo">
-                <div class=logo">
-                    <a href="index.html">
-                        <img src="img/f_logo.svg" width="147" height="40" title="Логотип компании" alt="Логотип компании"/>
-                    </a>
-                </div>
+                <a href="index.html" class="main-footer__logo-box">
+                    <img src="img/f_logo.svg" width="147" height="40" title="Логотип компании" alt="Логотип компании"/>
+                </a>
             </section>
             <section class="main-footer__social">
-                <div class="social-icons">
-                    <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-                    <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</
-                    <a class="social-link social-link--inst" href="https://www.instagram.com/htmlacademy">Мы в Инст
+                <div class="social-icons"> 
+                    <a class="social-icons__links social-icons__links--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                    <a class="social-icons__links social-icons__links--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                    <a class="social-icons__links social-icons__links--inst" href="https://www.instagram.com/htmlacademy">Мы в Инст</a>
                 </div>
             </section>
             <section class="page-footer__copyright">
                 Разработано:
-                <a class="page-footer__copyright-link btn" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</
+                <a class="page-footer__copyright-link btn" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </section>
         </div>
     </footer>
