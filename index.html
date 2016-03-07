@@ -28,10 +28,8 @@
 
     <main>
         <section class="intro">
-            <div class="wrapper">
-                <div class="intro__button">
-                    <a href="#0">Скачать приложение</a>
-                </div>
+            <div class="intro__wrapper">
+                <a href="#0" class="intro__button">Скачать приложение</a> 
                 <div class="intro__icons">
                     <a href="#0" class="intro__icon intro__icon--apple"></a>
                     <a href="#0" class="intro__icon intro__icon--android"></a>
@@ -45,10 +43,10 @@
         <section class="main-info">
             <div class="main-info__wrapper">
                 <div class="main-info__top">
-                    <p class="subtitle">
+                    <p class="main-info__subtitle">
                         Устали от серости мегаполиса?
                     </p>
-                    <p class="subtitle">
+                    <p class="main-info__subtitle">
                         Нам есть, что вам предложить!
                     </p>
                 </div>
@@ -86,54 +84,106 @@
                 </div>
             </div>
         </section>
-        <section class="reivews">
-            <div class="reivews__wrapper">
-                <div class="reivews__title">
-                    Николай Петров
-                </div>
-                <div class="reivews__text">
-                    &laquo;Это приложение перевернуло мой мир
-                    и позволило по&ndash;новому взглянуть на 
-                    привычные серые вещи! А еще я 
-                    познакомился со своей будующей женой
-                    в комментариях к выложенной фотографии!&raquo;
-                </div>
-                <div class="slider-nav">
-                    <label>
-                        <input class="slider-nav__switcher" type="radio" name="reivews" checked>
-                    </label>
-                    <label>
-                        <input class="slider-nav__switcher" type="radio" name="reivews">
-                    </label>
-                    <label>
-                        <input class="slider-nav__switcher" type="radio" name="reivews">
-                    </label>
+        <section class="reviews">
+            <div class="reviews__wrapper"> 
+                <div class="reviews__slider">
+                    <div class="reviews__slider-item">
+                        <div class="reviews__title">
+                            Николай Петров
+                        </div>
+                        <div class="reviews__text">
+                            &laquo;Это приложение перевернуло мой мир
+                            и позволило по&ndash;новому взглянуть на 
+                            привычные серые вещи! А еще я 
+                            познакомился со своей будующей женой
+                            в комментариях к выложенной фотографии!&raquo;
+                        </div>
+                    </div>
+                    <div class="reviews__slider-item">
+                        <div class="reviews__title">
+                            Николай Петров
+                        </div>
+                        <div class="reviews__text">
+                            &laquo;Это приложение перевернуло мой мир
+                            и позволило по&ndash;новому взглянуть на 
+                            привычные серые вещи! А еще я 
+                            познакомился со своей будующей женой
+                            в комментариях к выложенной фотографии!&raquo;
+                        </div>
+                    </div>
+                    <div class="reviews__slider-item">
+                        <div class="reviews__title">
+                            Николай Петров
+                        </div>
+                        <div class="reviews__text">
+                            &laquo;Это приложение перевернуло мой мир
+                            и позволило по&ndash;новому взглянуть на 
+                            привычные серые вещи! А еще я 
+                            познакомился со своей будующей женой
+                            в комментариях к выложенной фотографии!&raquo;
+                        </div>
+                        <div class="slider-nav">
+                            <label>
+                                <input class="slider-nav__switcher" type="radio" name="reviews" checked>
+                            </label>
+                            <label>
+                                <input class="slider-nav__switcher" type="radio" name="reviews">
+                            </label>
+                            <label>
+                                <input class="slider-nav__switcher" type="radio" name="reviews">
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="price">
             <div class="price__wrapper">
-                <div class="price__item">
-                    <div class="price__package">
-                        <span class="price__name">Стандарт</span>
-                        3,99 USD
+                <div class="price__slider">
+                    <div class="price__slider--item">
+                        <div class="price__package">
+                            <span class="price__name">Стандарт</span>
+                            3,99 USD
+                        </div>
+                        <ul class="price__list">
+                            <li class="price__offer price__offer--included">Розовый фильтр</li>
+                            <li class="price__offer price__offer--included">Смайлики</li>
+                            <li class="price__offer price__offer--noincluded">Комментарии</li>
+                        </ul>
                     </div>
-                    <ul class="price__list">
-                        <li class="price__offer price__offer--filter">Розовый фильтр</li>
-                        <li class="price__offer price__offer--smile">Смайлики</li>
-                        <li class="price__offer price__offer--comments">Комментарии</li>
-                    </ul>
-                </div>
-                <div class="slider-nav">
-                    <label>
-                        <input class="slider-nav__switcher" type="radio" name="reivews" checked>
-                    </label>
-                    <label>
-                        <input class="slider-nav__switcher" type="radio" name="reivews">
-                    </label>
-                    <label>
-                        <input class="slider-nav__switcher" type="radio" name="reivews">
-                    </label>
+                    <div class="price__slider--item">
+                        <div class="price__package">
+                            <span class="price__name">Стандарт</span>
+                            3,99 USD
+                        </div>
+                        <ul class="price__list">
+                            <li class="price__offer price__offer--included">Розовый фильтр</li>
+                            <li class="price__offer price__offer--included">Смайлики</li>
+                            <li class="price__offer price__offer--noincluded">Комментарии</li>
+                        </ul>
+                    </div>
+                    <div class="price__slider--item">
+                        <div class="price__package">
+                            <span class="price__name">Стандарт</span>
+                            3,99 USD
+                        </div>
+                        <ul class="price__list">
+                            <li class="price__offer price__offer--included">Розовый фильтр</li>
+                            <li class="price__offer price__offer--included">Смайлики</li>
+                            <li class="price__offer price__offer--noincluded">Комментарии</li>
+                        </ul>
+                    </div>
+                    <div class="slider-nav">
+                        <label>
+                            <input class="slider-nav__switcher" type="radio" name="reivews" checked>
+                        </label>
+                        <label>
+                            <input class="slider-nav__switcher" type="radio" name="reivews">
+                        </label>
+                        <label>
+                            <input class="slider-nav__switcher" type="radio" name="reivews">
+                        </label>
+                    </div>
                 </div>
             </div>
         </section>
@@ -142,26 +192,22 @@
                 <div class="contact__title">
                     Устали от серости мегаполиса?
                 </div>
-                <div class="contact__phone">
-                    Звоните:
-                    <span>+7 (812) 555-66-66</span>
+                <div class="contact__item">
+                    <b class="contact__item-title"> Звоните:</b> 
+                    <span class="contact__item-text">+7 (812) 555-66-66</span>
                 </div>
-                <div class="contact__email">
-                    Пишите:
+                <div class="contact__item">
+                    <b class="contact__item-title">Пишите:</b>
                     <span>mail@htmlacademy.ru</span>
                 </div>
-                <div class="contact__address">
-                    Приезжайте в гости:
-                    <span>ул. Большая Конюшенная, 19/8</span>
+                <div class="contact__item">
+                    <b class="contact__item-title">Приезжайте в гости:</b>
+                    <span class="contact__item-text">ул. Большая Конюшенная, 19/8</span>
                 </div>
+                <div class="contact__map"></div>
             </div>
         </section>
     </main>
-
-    <footer class="main-footer">
-        <div class="main-footer__map">
-        </div>
-    </footer>
 
   </body>
 </html>
