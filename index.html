@@ -2,11 +2,212 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Пинк</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="main-header">
+        <div class="main-header__wrapper">
+            <div class="main-header__logo">
+                <img src="img/logo.svg" width="75" height="22" title="Логотип компании" alt="Логотип компании"/>
+            </div>
+            <nav class="main-nav">
+                <span class="main-nav__toggle main-nav__toggle--close">Открыть меню</span>
+                <div class="main-nav__wrapper main-nav__wrapper--closed">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item main-nav__item--active">Информация</li>
+                        <li class="main-nav__item"><a href="#0">Возможности</a></li>
+                        <li class="main-nav__item"><a href="#0">Отзывы</a></li>
+                        <li class="main-nav__item"><a href="#0">Стоимость</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main-header__subtitle">Взгляните на жизнь иначе!</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="intro__wrapper">
+                <a href="#0" class="intro__button">Скачать приложение</a> 
+                <div class="intro__icons">
+                    <a href="#0" class="intro__icon intro__icon--apple"></a>
+                    <a href="#0" class="intro__icon intro__icon--android"></a>
+                    <a href="#0" class="intro__icon intro__icon--windows"></a>
+                </div>
+                <p class="intro__text">
+                    Доступно для iPHone, iPad, Android, Windows Phone, OS X, Windows 8
+                </p>
+            </div>
+        </section>
+        <section class="main-info">
+            <div class="main-info__wrapper">
+                <div class="main-info__top">
+                    <p class="main-info__subtitle">
+                        Устали от серости мегаполиса?
+                    </p>
+                    <p class="main-info__subtitle">
+                        Нам есть, что вам предложить!
+                    </p>
+                </div>
+                <div class="main-info__bottom">
+                    <div class="short-info">
+                        <div class="short-info__title">
+                            Поднимает настроение
+                        </div>
+                        <div class="short-info__text">
+                            Приложение позволит вам победить 
+                            осеннюю хандру и деперессию
+                            буквально в несколько кликов!
+                        </div>
+                    </div>
+                    <div class="short-info">
+                        <div class="short-info__title">
+                            Меняет мир вокруг
+                        </div>
+                        <div class="short-info__text">
+                            Сделайте снимок и украсьте его
+                            смайликом или текстовой подписью,
+                            чтобы усилить эффект
+                        </div>
+                    </div>
+                    <div class="short-info">
+                        <div class="short-info__title">
+                            Заводит новых друзей
+                        </div>
+                        <div class="short-info__text">
+                            Ставьте лайки, комментируте, делитесь 
+                            фотографиями с друзьями и заводите 
+                            новых
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="reviews__wrapper"> 
+                <div class="reviews__slider">
+                    <div class="reviews__slider-item">
+                        <div class="reviews__title">
+                            Николай Петров
+                        </div>
+                        <div class="reviews__text">
+                            &laquo;Это приложение перевернуло мой мир
+                            и позволило по&ndash;новому взглянуть на 
+                            привычные серые вещи! А еще я 
+                            познакомился со своей будующей женой
+                            в комментариях к выложенной фотографии!&raquo;
+                        </div>
+                    </div>
+                    <div class="reviews__slider-item">
+                        <div class="reviews__title">
+                            Николай Петров
+                        </div>
+                        <div class="reviews__text">
+                            &laquo;Это приложение перевернуло мой мир
+                            и позволило по&ndash;новому взглянуть на 
+                            привычные серые вещи! А еще я 
+                            познакомился со своей будующей женой
+                            в комментариях к выложенной фотографии!&raquo;
+                        </div>
+                    </div>
+                    <div class="reviews__slider-item">
+                        <div class="reviews__title">
+                            Николай Петров
+                        </div>
+                        <div class="reviews__text">
+                            &laquo;Это приложение перевернуло мой мир
+                            и позволило по&ndash;новому взглянуть на 
+                            привычные серые вещи! А еще я 
+                            познакомился со своей будующей женой
+                            в комментариях к выложенной фотографии!&raquo;
+                        </div>
+                        <div class="slider-nav">
+                            <label>
+                                <input class="slider-nav__switcher" type="radio" name="reviews" checked>
+                            </label>
+                            <label>
+                                <input class="slider-nav__switcher" type="radio" name="reviews">
+                            </label>
+                            <label>
+                                <input class="slider-nav__switcher" type="radio" name="reviews">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="price">
+            <div class="price__wrapper">
+                <div class="price__slider">
+                    <div class="price__slider--item">
+                        <div class="price__package">
+                            <span class="price__name">Стандарт</span>
+                            3,99 USD
+                        </div>
+                        <ul class="price__list">
+                            <li class="price__offer price__offer--included">Розовый фильтр</li>
+                            <li class="price__offer price__offer--included">Смайлики</li>
+                            <li class="price__offer price__offer--noincluded">Комментарии</li>
+                        </ul>
+                    </div>
+                    <div class="price__slider--item">
+                        <div class="price__package">
+                            <span class="price__name">Стандарт</span>
+                            3,99 USD
+                        </div>
+                        <ul class="price__list">
+                            <li class="price__offer price__offer--included">Розовый фильтр</li>
+                            <li class="price__offer price__offer--included">Смайлики</li>
+                            <li class="price__offer price__offer--noincluded">Комментарии</li>
+                        </ul>
+                    </div>
+                    <div class="price__slider--item">
+                        <div class="price__package">
+                            <span class="price__name">Стандарт</span>
+                            3,99 USD
+                        </div>
+                        <ul class="price__list">
+                            <li class="price__offer price__offer--included">Розовый фильтр</li>
+                            <li class="price__offer price__offer--included">Смайлики</li>
+                            <li class="price__offer price__offer--noincluded">Комментарии</li>
+                        </ul>
+                    </div>
+                    <div class="slider-nav">
+                        <label>
+                            <input class="slider-nav__switcher" type="radio" name="reivews" checked>
+                        </label>
+                        <label>
+                            <input class="slider-nav__switcher" type="radio" name="reivews">
+                        </label>
+                        <label>
+                            <input class="slider-nav__switcher" type="radio" name="reivews">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact__wrapper">
+                <div class="contact__title">
+                    Устали от серости мегаполиса?
+                </div>
+                <div class="contact__item">
+                    <b class="contact__item-title"> Звоните:</b> 
+                    <span class="contact__item-text">+7 (812) 555-66-66</span>
+                </div>
+                <div class="contact__item">
+                    <b class="contact__item-title">Пишите:</b>
+                    <span>mail@htmlacademy.ru</span>
+                </div>
+                <div class="contact__item">
+                    <b class="contact__item-title">Приезжайте в гости:</b>
+                    <span class="contact__item-text">ул. Большая Конюшенная, 19/8</span>
+                </div>
+                <div class="contact__map"></div>
+            </div>
+        </section>
+    </main>
 
   </body>
 </html>
