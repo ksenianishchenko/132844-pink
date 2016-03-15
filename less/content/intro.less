@@ -1,3 +1,52 @@
 .intro {
     border: 1px solid #000;
 }
+
+.intro__index {
+    min-height: 663px;
+}
+
+.intro__form,
+.intro__photo {
+    min-height: 170px;
+}
+
+.intro__wrapper {
+    .container;
+}
+
+.intro__top {
+    min-height: 393px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.intro__bottom {
+    min-height: 270px; 
+    border: 1px solid #000;
+    text-align: center;
+}
+
+@media @tablet {
+    .intro__index {
+        min-height: 620px;
+    }
+    .intro__form,
+    .intro__photo    {
+        min-height: 330px;
+    }
+    .intro__top, 
+    .intro__bottom {
+        width: 300px;
+    }
+}
+
+@media @desktop {
+    .intro__index {
+        min-height: 742px;
+    }
+    .intro__form,
+    .intro__photo {
+        min-height: 280px;
+    }
+}
