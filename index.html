@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
 
     <header class="main-header">
         <div class="main-header__wrapper">
-            <div class="main-header__top">
                 <div class="main-header__logo">
                     <img src="img/logo.svg" width="75" height="22" title="Логотип компании" alt="Логотип компании"/>
                 </div>
+                <span class="main-nav__toggle main-nav__toggle--close">Открыть меню</span>
                 <nav class="main-nav">
-                    <span class="main-nav__toggle main-nav__toggle--close">Открыть меню</span>
                     <div class="main-nav__wrapper main-nav__wrapper--closed">
                         <ul class="main-nav__list">
                             <li class="main-nav__item main-nav__item--active">Информация</li>
@@ -24,23 +24,26 @@
                         </ul>
                     </div>
                 </nav>
-            </div>
-            <div class="main-header__subtitle">Взгляните на жизнь иначе!</div>
         </div>
     </header>
 
     <main>
-        <section class="intro">
+        <section class="intro intro__index">
             <div class="intro__wrapper">
-                <a href="#0" class="intro__button">Скачать приложение</a> 
-                <div class="intro__icons">
-                    <a href="#0" class="intro__icon intro__icon--apple"></a>
-                    <a href="#0" class="intro__icon intro__icon--android"></a>
-                    <a href="#0" class="intro__icon intro__icon--windows"></a>
+                <div class="intro__top">
+                    <div class="intro__subtitle">Взгляните на жизнь иначе!</div>
                 </div>
-                <p class="intro__text">
-                    Доступно для iPHone, iPad, Android, Windows Phone, OS X, Windows 8
-                </p>
+                <div class="intro__bottom">
+                    <a href="#0" class="intro__button">Скачать приложение</a> 
+                    <div class="intro__icons">
+                        <a href="#0" class="intro__icon intro__icon--apple"></a>
+                        <a href="#0" class="intro__icon intro__icon--android"></a>
+                        <a href="#0" class="intro__icon intro__icon--windows"></a>
+                    </div>
+                    <p class="intro__text">
+                        Доступно для iPHone, iPad, Android, Windows Phone, OS X, Windows 8
+                    </p>
+                </div>
             </div>
         </section>
         <section class="main-info">
@@ -54,36 +57,49 @@
                     </p>
                 </div>
                 <div class="main-info__bottom">
-                    <div class="short-info">
-                        <div class="short-info__title">
+                    <div class="main-info__short">
+                        <div class="main-info__title">
                             Поднимает настроение
                         </div>
-                        <div class="short-info__text">
+                        <div class="main-info__text">
                             Приложение позволит вам победить 
                             осеннюю хандру и деперессию
                             буквально в несколько кликов!
                         </div>
                     </div>
-                    <div class="short-info">
-                        <div class="short-info__title">
+                    <div class="main-info__short">
+                        <div class="main-info__title">
                             Меняет мир вокруг
                         </div>
-                        <div class="short-info__text">
+                        <div class="main-info__text">
                             Сделайте снимок и украсьте его
                             смайликом или текстовой подписью,
                             чтобы усилить эффект
                         </div>
                     </div>
-                    <div class="short-info">
-                        <div class="short-info__title">
+                    <div class="main-info__short">
+                        <div class="main-info__title">
                             Заводит новых друзей
                         </div>
-                        <div class="short-info__text">
+                        <div class="main-info__text">
                             Ставьте лайки, комментируте, делитесь 
                             фотографиями с друзьями и заводите 
                             новых
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="research">
+            <div class="research__wrapper">
+                <div class="research__info">
+                    <div class="research__title">
+                        Эффект на 24 часа!
+                    </div>
+                    <div class="research__text">
+                        Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+                    </div>
+                    <a href="0#" class="research__link">Узнать больше об исследовании</a>
                 </div>
             </div>
         </section>
@@ -156,8 +172,8 @@
                     </div>
                     <div class="price__slider-item">
                         <div class="price__package">
-                            <span class="price__name">Стандарт</span>
-                            3,99 USD
+                            <span class="price__name">База</span>
+                            1,99 USD
                         </div>
                         <ul class="price__list">
                             <li class="price__offer price__offer--included">Розовый фильтр</li>
@@ -167,8 +183,8 @@
                     </div>
                     <div class="price__slider-item">
                         <div class="price__package">
-                            <span class="price__name">Стандарт</span>
-                            3,99 USD
+                            <span class="price__name">Анлим</span>
+                            9,99 USD
                         </div>
                         <ul class="price__list">
                             <li class="price__offer price__offer--included">Розовый фильтр</li>
@@ -212,5 +228,25 @@
         </section>
     </main>
 
+    <footer class="main-footer main-footer__display">
+        <div class="main-footer__wrapper">
+            <section class="main-footer__logo">
+                <a href="index.html" class="main-footer__logo-box">
+                    <img src="img/f_logo.svg" width="147" height="40" title="Логотип компании" alt="Логотип компании"/>
+                </a>
+            </section>
+            <section class="main-footer__social">
+                <div class="social-icons"> 
+                    <a class="social-icons__links social-icons__links--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                    <a class="social-icons__links social-icons__links--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                    <a class="social-icons__links social-icons__links--inst" href="https://www.instagram.com/htmlacademy">Мы в Инст</a>
+                </div>
+            </section>
+            <section class="main-footer__copyright">
+                Разработано:
+                <a class="main-footer__copyright-link btn" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </section>
+        </div>
+    </footer>
   </body>
 </html>

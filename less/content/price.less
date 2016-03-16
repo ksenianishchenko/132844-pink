@@ -1,3 +1,43 @@
 .price {
     border: 1px solid #000;
+    min-height: 380px;
+    padding-top: 90px;
+}
+
+.price__wrapper {
+    .container;
+}
+
+.price__slider-item {
+    &:nth-child(2n+1) {
+        display: none;
+    }
+}
+
+.price__slider {
+    display: table;
+}
+
+.price__package,
+.price__list {
+    display: table-row;
+}
+
+.price__offer {
+    
+}
+
+@media @tablet {
+    .price__slider-item {
+        &:nth-child(2n+1) {
+            display: block;
+        }
+    }
+    .price__package {
+        display: table-cell;
+    }
+}
+
+@media @desktop {
+    
 }

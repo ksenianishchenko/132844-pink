@@ -1,3 +1,36 @@
 .upload-photo {
     border: 1px solid #000;
+    min-height: 750px;
+}
+
+.upload-photo__wrapper {
+    .container;
+    .clearfix;
+}
+
+.user-photo__subtitle {
+    clear: both;
+}
+
+@media @tablet {
+    .upload-photo__img {
+        width: 300px;
+        height: 400px;
+        margin-right: 20px;
+        float: left;
+    }
+    .upload-photo__edit {
+        width: 300px;
+        height: 400px;
+        float: left;
+    }
+}
+
+@media @desktop {
+    .upload-photo__img {
+        margin-right: 90px;
+    }
+    .upload-photo__edit {
+        width: 410px;
+    }
 }

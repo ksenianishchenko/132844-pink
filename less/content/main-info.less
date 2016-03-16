@@ -1,3 +1,48 @@
 .main-info {
     border: 1px solid #000;
 }
+.main-info__wrapper {
+    .container;
+    .clearfix;
+    text-align: center;
+} 
+
+.main-info__top {
+    border: 1px solid #000;
+    min-height: 248px;
+    margin-bottom: 50px;
+}
+
+.main-info__bottom {
+    min-height: 784px;
+}
+
+.main-info__short {
+    border: 1px solid #000;
+    min-height: 100px;
+    margin-bottom: 40px;
+}
+
+@media @tablet {
+    .main-info__bottom {
+        min-height: 485px;
+        width: 320px;
+        padding-left: 300px;
+    }
+}
+
+@media @desktop {
+    .main-info__bottom {
+        min-height: 650px;
+        width: auto;
+        padding-left: 0;
+    }
+    .main-info__short {
+        display: inline-block;
+        vertical-align: top;
+        width: 264px;
+        height: 115px;
+        margin-bottom: 0;
+        padding-top: 360px;
+    }
+}
