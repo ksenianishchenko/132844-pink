@@ -1,52 +1,197 @@
 .intro {
-    border: 1px solid #000;
+    background: url('../../img/bg-back-mobile.jpg') no-repeat 50% -15px;
+    background-size: 830px;
+    padding-top: 85px;
 }
 
-.intro__index {
-    min-height: 663px;
-}
-
-.intro__form,
-.intro__photo {
-    min-height: 170px;
+.intro__top {
+    min-height: 375px;
 }
 
 .intro__wrapper {
     .container;
+    text-align: center;
 }
 
-.intro__top {
-    min-height: 393px;
-    text-align: center;
-    border: 1px solid #000;
+.intro__wrapper--bgr {
+    background: url('../../img/iphone-hand-mobile.png') no-repeat 0 100%;
+    background-size: 250px;
+}
+
+.intro__subtitle {
+    font-family: 'Open Sans Light';
+    font-weight: 300;
+    font-size: 24px;
+    color: #fff;
+    padding-left: 28px;
+    padding-right: 28px;
 }
 
 .intro__bottom {
-    min-height: 270px; 
-    border: 1px solid #000;
+    min-height: 245px; 
+    padding-top: 25px;
+    text-align: center;
+    background-color: #1d2631;
+}
+
+.intro__button {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    font-family: 'Open Sans Bold';
+    font-weight: 700;
+    font-size: 18px;
+    width: 275px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 35px;
+}
+
+.intro__icons {
     text-align: center;
 }
 
+.intro__icon {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+
+.intro__icon--apple {
+    background: url('../../img/logo-apple.svg') no-repeat 50% 50%;
+}
+
+.intro__icon--android {
+    background: url('../../img/logo-android.svg') no-repeat 50% 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.intro__icon--windows {
+    background: url('../../img/logo-microsoft.svg') no-repeat 50% 50%;
+}
+
+.intro__text {
+    font-family: 'Open Sans Light';
+    font-weight: 300;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.intro__form,
+.intro__photo {
+    min-height: 150px;
+}
+
+.intro__form .intro__wrapper--bgr,
+.intro__photo .intro__wrapper--bgr {
+    background: none;
+}
+
 @media @tablet {
-    .intro__index {
-        min-height: 620px;
-    }
-    .intro__form,
-    .intro__photo    {
-        min-height: 330px;
+    .intro {
+       padding-top: 198px; 
+       min-height: 530px;
+       background: url('../../img/iphone-hand-tablet.png') no-repeat 85% 100%, 
+       url('../../img/bg-back-mobile.jpg') no-repeat 50% 0;
+        background-size: 500px, cover;
     }
     .intro__top, 
     .intro__bottom {
         width: 300px;
+        padding-left: 40px;
+    }
+    .intro__top {
+        min-height: 100px;
+        margin-bottom: 15px;
+    } 
+    .intro__bottom {
+        min-height: 250px;
+        background: none;
+        padding-top: 0;
+    }
+    .intro__wrapper--bgr {
+        background: none;
+    }
+    .intro__subtitle {
+        padding-left: 58px;
+        padding-right: 58px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .intro__text {
+        padding: 0;
+        font-size: 18px;
+    }
+    .intro__button {
+        width: 294px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 45px;
+    }
+    .intro__icons {
+        margin-bottom: 30px;
+    }
+    .intro__form,
+    .intro__photo {
+        min-height: 260px;
+        padding-top: 180px;
+        line-height: 60px;
+        background: url('../../img/bg-back-mobile.jpg') no-repeat 50% 0;
+        background-size: cover;
+    }
+    .intro__form .intro__subtitle,
+    .intro__photo .intro__subtitle {
+        font-size: 50px;
     }
 }
 
 @media @desktop {
-    .intro__index {
-        min-height: 742px;
+    .intro {
+        padding-top: 215px;
+        min-height: 640px;
+        background: url('../../img/iphone-hand-tablet.png') no-repeat 75% 100%, 
+       url('../../img/bg-back-mobile.jpg') no-repeat 50% 0;
+        background-size: 600px, cover;
+    }
+    .intro__top, 
+    .intro__bottom {
+        width: 300px;
+        padding-left: 130px;
+    }
+    .intro__subtitle {
+        font-size: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: center;
+    }
+    .intro__bottom { 
+        padding-top: 15px;
+    }
+    .intro__button {
+        margin-bottom: 70px;
+    }
+    .intro__icons {
+        margin-bottom: 45px;
     }
     .intro__form,
     .intro__photo {
-        min-height: 280px;
+        min-height: 220px;
+        padding-top: 175px;
+        background: url('../../img/bg-back-mobile.jpg') no-repeat 50% 0;
+        background-size: cover;
+    }
+    .intro__form .intro__subtitle,
+    .intro__photo .intro__subtitle {
+        font-size: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }

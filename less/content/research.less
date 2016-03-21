@@ -1,6 +1,5 @@
 .research {
     display: none;
-    border: 1px solid #000;
     min-height: 265px;
     padding-top: 100px;
 }
@@ -11,17 +10,88 @@
     }
     .research__wrapper {
         .container;
-        .clearfix;
+        position: relative;
     }
     .research__info {
-        width: 320px;
-        padding-left: 300px;
+        width: 310px;
+        padding-left: 340px;
+        padding-right: 40px;
+    }
+    .research__info:before {
+        content: '';
+        display: block;
+        width: 240px;
+        height: 280px;
+        background: transparent url('../../img/round_diagram.png') no-repeat 50% 50%;
+        position: absolute;
+        left: 40px;
+        top: -45px;
+    }
+    .research__title {
+        font-family: 'Open Sans Bold';
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        padding-right: 130px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        color: #000;
+    }
+    .research__text {
+        font-family: 'Open Sans Regular';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: @main-text-color;
+        padding-right: 0;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+    .research__link {
+        font-family: 'Open Sans Regular';
+        font-weight: 400;
+        font-size: 14px;
+        color: @research__link-color;
+        padding-left: 10px;
     }
 }
 
 @media @desktop {
+    .research {
+        background-color: #f2f2f2;
+        min-height: 320px;
+    }
     .research__info {
-        width: 320px;
-        padding-left: 570px;
+        width: 525px;
+        padding-left: 500px;
+        padding-right: 130px;
+    }
+    .research__info:before {
+        left: 130px;
+        top: -95px;
+        width: 300px;
+        height: 350px;
+        background-size: 300px;
+    }
+    .research__title,
+    .research__text,
+    .research__link {
+        padding-left: 0;
+    }
+    .research__title br,
+    .research__text br {
+        display: none;
+    }
+    .research__title {
+        margin-bottom: 20px;
+    }
+    .research__text {
+        padding-right: 3px;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 34px;
+    }
+    .research__link {
+        font-size: 18px;
     }
 }

@@ -1,36 +1,263 @@
 .upload-photo {
-    border: 1px solid #000;
-    min-height: 750px;
+    min-height: 760px;
+    background-color: #f2f2f2;
 }
 
 .upload-photo__wrapper {
     .container;
-    .clearfix;
 }
 
-.user-photo__subtitle {
-    clear: both;
+.upload-photo__img {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.upload-photo__edit {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.upload-photo__wrap:nth-child(2) .upload-photo__scale,
+.upload-photo__wrap:nth-child(3) .upload-photo__scale {
+    display: none;
+}
+
+.upload-photo__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 38px;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #dddfe0;
+}
+
+.upload-photo__icon {
+    width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: transparent;
+}
+
+.upload-photo__icon--cut {
+    background-image: url('../../img/icon-editor-crop.svg'); 
+}
+
+.upload-photo__icon--bgr {
+    background-image: url('../../img/icon-editor-fill.svg'); 
+}
+
+.upload-photo__icon--suturation {
+    background-image: url('../../img/icon-editor-contrast.svg'); 
+}
+
+.upload-photo__wrap {
+    position: relative;
+}
+
+.upload-photo__scale {
+    position: absolute;
+    bottom: -35px;
+    left: -17px;
+}
+
+.upload-photo__range {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 2px;
+    width: 200px;
+    background-color: #283645;
+    position: relative;
+}
+
+.upload-photo__toggle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #d4325d;
+    background-color: #fff;
+    position: absolute;
+    top: -6px;
+    right: 35px;
+}
+
+.upload-photo__buttons {
+    padding-top: 38px;
+}
+
+.upload-photo__button {
+    display: block;
+    text-decoration: none;
+    padding-left: 88px;
+    padding-right: 88px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-family: 'Open Sans Bold', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #eaebeb;
+    border: 3px solid #eaebeb;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.upload-photo__button--active {
+    border: 3px solid #d22856;
+    color: #d22856;
 }
 
 @media @tablet {
+    .upload-photo {
+        min-height: 400px;
+    }
+    .upload-photo__edit,
+    .upload-photo__img {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .upload-photo__bgr {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 57px;
+        padding-bottom: 54px;
+    }
     .upload-photo__img {
         width: 300px;
         height: 400px;
-        margin-right: 20px;
-        float: left;
+        padding-right: 0;
+        padding-top: 0;
+    }
+    .upload-photo__img img {
+        width: 300px;
+        height: 400px;
     }
     .upload-photo__edit {
         width: 300px;
-        height: 400px;
-        float: left;
+        padding-left: 0;
+    }
+    .upload-photo__icons {
+        display: flex;
+        flex-direction: column;
+        padding-left: 24px;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-top: 5px;
+        border-bottom: 0;
+    }
+    .upload-photo__icon {
+        width: 25px;
+        height: 25px;
+        background-size: cover;
+        margin-right: 32px;
+    }
+    .upload-photo__scale {
+        position: static;
+        align-self: center;
+    }
+    .upload-photo__wrap {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #dddfe0;
+        padding-bottom: 23px;
+        margin-bottom: 23px;
+    }
+    .upload-photo__toggle { 
+        top: 6px;
+    }
+    .upload-photo__wrap--cut .upload-photo__toggle {
+        right: 60px;
+    }
+    .upload-photo__wrap--bgr .upload-photo__toggle {
+        right: 180px;
+    }
+    .upload-photo__wrap--suturation .upload-photo__toggle {
+        right: 110px;
+    }
+    .upload-photo__range {
+        width: 200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .upload-photo__wrap:nth-child(2) .upload-photo__scale,
+    .upload-photo__wrap:nth-child(3) .upload-photo__scale {
+        display: block;
+    }
+    .upload-photo__button { 
+        padding-left: 73px;
+        padding-right: 73px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        margin-left: 25px;
+        margin-right: 15px;
+        margin-bottom: 24px;
+    }
+    .upload-photo__buttons {
+        padding-top: 42px;
     }
 }
 
 @media @desktop {
+    .upload-photo {
+        background-color: #fff;
+        margin-bottom: 80px;
+    }
+    .upload-photo__bgr {
+        background-color: #f2f2f2;
+        margin-left: 130px;
+        margin-right: 130px;
+        padding-top: 58px;
+    }
     .upload-photo__img {
-        margin-right: 90px;
+        padding-left: 80px;
     }
     .upload-photo__edit {
+        padding-right: 60px;
         width: 410px;
+    }
+    .upload-photo__icon {
+        width: 45px;
+        height: 45px;
+        background-size: cover;
+        margin-right: 45px;
+    }
+    .upload-photo__range {
+        width: 290px;
+    }
+    .upload-photo__toggle { 
+        top: 16px;
+    }
+    .upload-photo__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 130px;
+    }
+    .upload-photo__button { 
+        padding-left: 42px;
+        padding-right: 42px;
+        width: 92px;
+        margin: 0;
+    }
+    .upload-photo__icons {
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .upload-photo__wrap {
+        padding-bottom: 10px;
+        margin-bottom: 16px;
+    }
+    .upload-photo__wrap--cut .upload-photo__toggle {
+        right: 232px;
+    }
+    .upload-photo__wrap--bgr .upload-photo__toggle {
+        right: 56px;
+    }
+    .upload-photo__wrap--suturation .upload-photo__toggle {
+        right: 144px;
     }
 }
