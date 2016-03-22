@@ -1,11 +1,20 @@
 .reviews {
-    border: 1px solid #000;
-    min-height: 300px;
+    min-height: 330px;
     padding-top: 50px;
-    
 }
+
 .reviews__wrapper {
     .container;
+    position: relative;
+}
+
+.reviews__slider {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.reviews__slider-item {
+    text-align: center;
 }
 
 .reviews__slider-item {
@@ -14,10 +23,117 @@
     }
 }
 
+.reviews__title {
+    font-family: 'Open Sans Bold';
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.reviews__text {
+    font-family: 'Open Sans Regular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+.reviews__age {
+    font-family: 'Open Sans Regular';
+    font-weight: 400;
+    font-size: 14px;
+    color: @main-text-color;
+    display: none;
+}
+
+.reviews__text br {
+    display: none;
+}
+
 @media @tablet {
-        
+    .reviews {
+        padding-top: 70px;
+        min-height: 305px;
+    }
+    .reviews__slider {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .reviews__slider-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .reviews__title {
+        order: 2;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .reviews__age {
+        display: block;
+        margin-top: 13px;
+    }
+    .reviews__text {
+        font-size: 18px;
+        margin-bottom: 35px;
+    }
+    .reviews__text br {
+        display: block;
+    }
 }
 
 @media @desktop { 
-    padding-top: 190px;
+    .reviews {
+        padding-top: 185px;
+    }
+    .reviews__wrapper:before {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 65px;
+        background: transparent url('../../img/quotes.png') no-repeat 50% 50%;
+        position: absolute;
+        top: -120px;
+        left: 560px;
+    }
+    .reviews .slider-nav {
+        display: none;
+    }
+    .reviews__text br {
+        display: none;
+    }
+    .reviews__text {
+        padding-left: 125px;
+        padding-right: 125px;
+    }
+    .reviews__slider {
+        padding-left: 130px;
+        padding-right: 130px;
+        position: relative;
+    }
+    .reviews__slider:before,
+    .reviews__slider:after {
+        content: '';
+        display: block;
+        width: 22px;
+        height: 40px;
+        position: absolute;
+        top: 23px;
+    }
+    .reviews__slider:before {
+        background: transparent url('../../img/left-arrow.png') no-repeat 50% 50%;
+        left: 130px;
+    }
+    .reviews__slider:after {
+        background: transparent url('../../img/right-arrow.png') no-repeat 50% 50%;
+        right: 130px;
+    }
+    .reviews__title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .reviews__age {
+        font-size: 18px;
+        margin-top: 5px;
+    }
 }

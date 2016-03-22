@@ -1,0 +1,26 @@
+.slider-nav {
+    text-align: center;
+}
+
+.slider-nav__switcher {
+    display: none;  
+}
+
+.slider-nav__round {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: @slider-nav-color;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.slider-nav__round:last-child {
+    margin-right: none;
+}
+
+.slider-nav__switcher:checked + span {
+    background-color: transparent;
+    border: 3px solid #283645;
+}
