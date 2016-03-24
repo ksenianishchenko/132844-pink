@@ -51,6 +51,11 @@
     display: none;
 }
 
+.reviews__right,
+.reviews__left {
+    display: none;
+}
+
 @media @tablet {
     .reviews {
         padding-top: 70px;
@@ -91,7 +96,7 @@
         display: block;
         width: 80px;
         height: 65px;
-        background: transparent url('../../img/quotes.png') no-repeat 50% 50%;
+        background: transparent url('../../img/icon-quotes.svg') no-repeat 50% 50%;
         position: absolute;
         top: -120px;
         left: 560px;
@@ -111,22 +116,31 @@
         padding-right: 130px;
         position: relative;
     }
-    .reviews__slider:before,
-    .reviews__slider:after {
-        content: '';
-        display: block;
+    .reviews__left,
+    .reviews__right {
         width: 22px;
         height: 40px;
         position: absolute;
         top: 23px;
+        display: block;
     }
-    .reviews__slider:before {
-        background: transparent url('../../img/left-arrow.png') no-repeat 50% 50%;
+    .reviews__left {
         left: 130px;
     }
-    .reviews__slider:after {
-        background: transparent url('../../img/right-arrow.png') no-repeat 50% 50%;
+    .reviews__right {
         right: 130px;
+    }
+    .reviews__left-arrow,
+    .reviews__right-arrow {
+        fill: #bec2c7;
+    }
+    .reviews__left-arrow:hover,
+    .reviews__right-arrow:hover {
+        fill: #7e868f;
+    }
+    .reviews__left-arrow:active,
+    .reviews__right-arrow:active {
+        fill: #e9ebec;
     }
     .reviews__title {
         font-size: 24px;

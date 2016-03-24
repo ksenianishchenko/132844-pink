@@ -36,21 +36,16 @@
 .upload-photo__icon {
     width: 55px;
     height: 55px;
+    fill: #b5b9be;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: transparent;
-}
-
-.upload-photo__icon--cut {
-    background-image: url('../../img/icon-editor-crop.svg'); 
-}
-
-.upload-photo__icon--bgr {
-    background-image: url('../../img/icon-editor-fill.svg'); 
-}
-
-.upload-photo__icon--suturation {
-    background-image: url('../../img/icon-editor-contrast.svg'); 
+    &--active {
+        fill: #d22856;
+    }
+    &:hover {
+        fill: #8d949b;
+    }
 }
 
 .upload-photo__wrap {
@@ -81,6 +76,9 @@
     position: absolute;
     top: -6px;
     right: 35px;
+    &:active {
+        background-color: #d22856;
+    }
 }
 
 .upload-photo__buttons {
@@ -97,16 +95,32 @@
     font-family: 'Open Sans Bold', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    color: #eaebeb;
-    border: 3px solid #eaebeb;
+    color: #d22856;
+    border: 3px solid #d22856;
     border-radius: 30px;
     margin-bottom: 10px;
     text-align: center;
+    &:hover {
+        background-color: #d22856;
+        color: #fff;
+    }
+    &:active {
+        color: #e06989;
+    }
 }
 
-.upload-photo__button--active {
-    border: 3px solid #d22856;
-    color: #d22856;
+.upload-photo__button--cancel {
+    color: #dddfe0;
+    border: 3px solid #dddfe0;
+    &:hover {
+        background-color: transparent;
+        color: #b5b9be;
+        border: 3px solid #b5b9be;
+    }
+    &:active {
+        color: #cbced2;
+        background-color: #b5b9be;
+    }
 }
 
 @media @tablet {
@@ -118,7 +132,7 @@
         padding-left: 40px;
         padding-right: 40px;
     }
-    .upload-photo__bgr {
+    .upload-photo__background {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -131,10 +145,6 @@
         height: 400px;
         padding-right: 0;
         padding-top: 0;
-    }
-    .upload-photo__img img {
-        width: 300px;
-        height: 400px;
     }
     .upload-photo__edit {
         width: 300px;
@@ -154,6 +164,7 @@
         height: 25px;
         background-size: cover;
         margin-right: 32px;
+        fill: #d22856;
     }
     .upload-photo__scale {
         position: static;
@@ -172,7 +183,7 @@
     .upload-photo__wrap--cut .upload-photo__toggle {
         right: 60px;
     }
-    .upload-photo__wrap--bgr .upload-photo__toggle {
+    .upload-photo__wrap--background .upload-photo__toggle {
         right: 180px;
     }
     .upload-photo__wrap--suturation .upload-photo__toggle {
@@ -204,9 +215,8 @@
 @media @desktop {
     .upload-photo {
         background-color: #fff;
-        margin-bottom: 80px;
     }
-    .upload-photo__bgr {
+    .upload-photo__background {
         background-color: #f2f2f2;
         margin-left: 130px;
         margin-right: 130px;
