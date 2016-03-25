@@ -17,7 +17,6 @@
     display: block;
     background-color: #283645;
     color: #fff;
-    font-family: 'Open Sans Bold';
     font-weight: 700;
     font-size: 18px;
     text-decoration: none;
@@ -37,12 +36,17 @@
 }
 
 .main-nav-toggle {
+    text-align: right;
     width: 55px;
     height: 26px;
     position: absolute;
     top: 20px;
     right: 20px;
     display: block;
+    &--close {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 .hidden{
@@ -64,6 +68,10 @@
     .main-nav-toggle {
         right: 40px;
         top: 40px;
+    }
+    .main-nav__item a {
+        padding-bottom: 19px;
+        padding-top: 19px;
     }
 }
 
@@ -88,7 +96,6 @@
         background: transparent;
         border-top: none;
         border-bottom: none;
-        font-family: 'Open Sans Regular';
         font-weight: 400;
         text-transform: none;
         padding: 0;

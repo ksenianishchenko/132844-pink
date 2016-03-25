@@ -1,5 +1,5 @@
 .intro {
-    background: url('../../img/bg-back-mobile.jpg') no-repeat 50% -15px;
+    background: #1d2631 url('../../img/bg-back-mobile.jpg') no-repeat 50% -15px;
     background-size: 720px;
     padding-top: 85px;
 }
@@ -19,7 +19,6 @@
 }
 
 .intro__subtitle {
-    font-family: 'Open Sans Light';
     font-weight: 300;
     font-size: 24px;
     color: #fff;
@@ -42,22 +41,19 @@
     padding-bottom: 12px;
     border: 3px solid #fff;
     border-radius: 30px;
-    font-family: 'Open Sans Bold';
     font-weight: 700;
     font-size: 18px;
     width: 275px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 35px;
-}
-
-.intro__button:hover {
-    background-color: #fff;
-    color: #d22856;
-}
-
-.intro__button:active {
-    color: #f1becc;
+    &:hover {
+        background-color: #fff;
+        color: #d22856;
+    }
+    &:active {
+        color: #f1becc;
+    }
 }
 
 .intro__icons {
@@ -85,7 +81,6 @@
 }
 
 .intro__text {
-    font-family: 'Open Sans Light';
     font-weight: 300;
     color: #fff;
     font-size: 14px;
@@ -94,13 +89,13 @@
     padding-right: 40px;
 }
 
-.intro__form,
-.intro__photo {
+.intro--form,
+.intro--photo {
     min-height: 150px;
 }
 
-.intro__form .intro__wrapper--bgr,
-.intro__photo .intro__wrapper--bgr {
+.intro--form .intro__wrapper--bgr,
+.intro--photo .intro__wrapper--bgr {
     background: none;
 }
 
@@ -161,16 +156,16 @@
     .intro__icons {
         margin-bottom: 30px;
     }
-    .intro__form,
-    .intro__photo {
+    .intro--form,
+    .intro--photo {
         min-height: 260px;
         padding-top: 180px;
         line-height: 60px;
         background: url('../../img/bg-back-mobile.jpg') no-repeat 50% 0;
         background-size: cover;
     }
-    .intro__form .intro__subtitle,
-    .intro__photo .intro__subtitle {
+    .intro--form .intro__subtitle,
+    .intro--photo .intro__subtitle {
         font-size: 50px;
     }
     @media
@@ -215,20 +210,20 @@
     .intro__icons {
         margin-bottom: 45px;
     }
-    .intro__form,
-    .intro__photo {
+    .intro--form,
+    .intro--photo {
         min-height: 220px;
         padding-top: 175px;
         background: url('../../img/bg-back-mobile.jpg') no-repeat 50% 0;
         background-size: cover;
     }
-    .intro__form .intro__subtitle,
-    .intro__photo .intro__subtitle {
+    .intro--form .intro__subtitle,
+    .intro--photo .intro__subtitle {
         font-size: 50px;
         padding-left: 150px;
         padding-right: 150px;
     }
-    .intro__photo .intro__subtitle {
+    .intro--photo .intro__subtitle {
         padding-left: 300px;
         padding-right: 300px;
     }

@@ -7,7 +7,6 @@
 }
 
 .form__subtitle {
-    font-family: 'Open Sans Regular', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
@@ -31,7 +30,6 @@
 
 .form__input-title {
     display: block;
-    font-family: 'Open Sans Regular', sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #d22856;
@@ -54,10 +52,9 @@
     padding-bottom: 17px;
     border: 2px solid #e5e5e5;
     border-radius: 3px;
-    font-family: 'Open Sans Regular', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .form__item:hover {
@@ -71,25 +68,25 @@
     outline: none;
 }
 
-.form__set--nbr1 {
+.form__set--namber1 {
     min-height: 370px;
 }
 
-.form__set--nbr2 {
+.form__set--namber2 {
     min-height: 595px;
 }
 
-.form__set--nbr3 {
+.form__set--namber3 {
     padding-top: 35px;
     min-height: 245px;
 }
 
-.form__set--nbr4 {
+.form__set--namber4 {
     padding-top: 38px;
     min-height: 290px;
 }
 
-.form__set--nbr5 {
+.form__set--namber5 {
     min-height: 270px;
 }
 
@@ -97,32 +94,33 @@
     background-color: #f2f2f2;
 }
 
-.form__set--nbr2 .form__input-title {
+.form__set--namber2 .form__input-title {
     padding-left: 18px;
     padding-right: 18px;
     margin-left: 0;
     padding-top: 30px; 
 }
-.form__set--nbr3 legend {
+.form__set--namber3 legend {
     display: none;
 }
 
-.form__set--nbr4 .form__input-title {
+.form__set--namber4 .form__input-title {
     margin-bottom: 0;
     padding-top: 35px; 
 }
 
-.form__set--nbr5 .form__input-title {
+.form__set--namber5 .form__input-title {
     margin-bottom: 15px;
     margin-left: 0;
     padding-top: 55px;
 }
 
-.form__set--nbr5 .form__item {
+.form__set--namber5 .form__item {
     min-height: 165px;
 }
 
-.form__checkbox-list {
+.form__checkbox-list,
+.form__radio-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -134,7 +132,6 @@
 
 .form__checkbox-item {
     padding-left: 68px;
-    font-family: 'Open Sans Regular', sans-serif;
     font-weight: 400;
     font-size: 18px;
     padding-top: 10px;
@@ -151,7 +148,8 @@
     margin-bottom: 0;
 }
 
-.form__checkbox {
+.form__checkbox,
+.form__radio {
     display: none;
 }
 
@@ -181,26 +179,16 @@
     border: 2px solid #d22856;
 }
 
-.form__radio-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 .form__radio-item {
     padding-left: 70px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     position: relative;
 }
 
 .form__radio-item:last-child {
     margin-bottom: 10px;
-}
-
-.form__radio {
-    display: none;
 }
 
 .form__radio + span {
@@ -241,7 +229,6 @@
     width: 280px;
     background-color: #2aab6d;
     border: 1px solid #2aab6d;
-    font-family: 'Open Sans Regular', sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: #fff;
@@ -249,7 +236,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 40px;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .form__submit:hover {
@@ -267,14 +254,13 @@
 }
 
 .form__required {
-    font-family: 'Open Sans Regular', sans-serif;
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 }
 
 .form__required-dot {
@@ -297,23 +283,23 @@
         padding-left: 40px;
         padding-right: 40px;
     }
-    .form__wrap-item--ord1 {
+    .form__wrap-item--order1 {
         order: 1;
     }
-    .form__wrap-item--ord4 {
+    .form__wrap-item--order4 {
         order: 2;
     }
-    .form__wrap-item--ord2 {
+    .form__wrap-item--order2 {
         order: 4;
     }
-    .form__wrap-item--ord3 {
+    .form__wrap-item--order3 {
         order: 3;
     }
 
-    .form__wrap-item--ord5 {
+    .form__wrap-item--order5 {
         order: 5;
     }
-    .form__wrap-item--ord6 {
+    .form__wrap-item--order6 {
         order: 6;
     }
     .form__set {
@@ -341,82 +327,87 @@
     }
     .form__item {
         flex-grow: 1;
-        margin-bottom: 50px;
+        margin-bottom: 52px;
     }
     .form__wrap-item--color2 {
         background-color: #fff;
     }
-    .form__set--nbr2 .form__input-title,
-    .form__set--nbr3 .form__input-title,
-    .form__set--nbr4 .form__input-title,
-    .form__set--nbr5 .form__input-title {
+    .form__set--namber2 .form__input-title,
+    .form__set--namber3 .form__input-title,
+    .form__set--namber4 .form__input-title,
+    .form__set--namber5 .form__input-title {
         padding-top: 0; 
         padding-left: 30px;
         padding-right: 30px;
     }
-    .form__set--nbr3 legend {
+    .form__set--namber3 legend {
         display: block;
     }
-    .form__set--nbr2,
-    .form__set--nbr3,
-    .form__set--nbr4,
-    .form__set--nbr5 {
-        padding-left: 60px;
-        padding-right: 60px;
+    .form__set--namber2,
+    .form__set--namber3,
+    .form__set--namber4,
+    .form__set--namber5 {
+        padding-left: 55px;
+        padding-right: 55px;
     }
-    .form__set--nbr4 {
+    .form__set--namber4 {
         min-height: 255px;
-        margin-bottom: 58px;
+        margin-bottom: 55px;
     }
-    .form__set--nbr1 {
+    .form__set--namber1 {
         min-height: 320px;
         border: none;
         margin-bottom: 10px;
     }
-    .form__set--nbr3 {
+    .form__set--namber3 {
         min-height: 190px;
-        margin-bottom: 60px;
+        margin-bottom: 58px;
     }
-    .form__set--nbr2 {
+    .form__set--namber2 {
         min-height: 550px;
         margin-bottom: 55px;
     }
-    .form__set--nbr5 {
+    .form__set--namber5 {
         min-height: 290px;
         padding-bottom: 10px;
         margin-bottom: 55px;
     }
-    .form__set--nbr3 .form__set-item {
+    .form__set--namber3 .form__set-item {
         display: flex;
         flex-direction: column;
         margin-bottom: 35px;
     }
-    .form__set--nbr3 .form__set-item:last-child {
-        margin-bottom: 10px;
+    .form__set--namber3 .form__set-item:last-child {
+        margin-bottom: 20px;
     }
-    .form__set--nbr3 .form__input-title {
+    .form__set--namber3 .form__input-title {
         order: 2;
         margin-top: 0;
         margin-bottom: 0;
+        padding-left: 13px;
     } 
-    .form__set--nbr3 .form__item {
-        margin-bottom: 20px;
+    .form__set--namber3 .form__item {
+        margin-bottom: 16px;
         width: 470px;
     }
-    .form__set--nbr5 .form__input-title {
-        margin-bottom: 40px;
+    .form__set--namber5 .form__input-title {
+        margin-bottom: 36px;
     }
-    .form__set--nbr5 .form__item {
+    .form__set--namber5 .form__item {
         width: 470px;
         min-height: 150px;
         margin-bottom: 10px;
     }
-    .form__wrap-item--ord6 {
+    .form__wrap-item--order6 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-right: 80px;
         margin-bottom: 10px;
+    }
+    .form__radio-item,
+    .form__checkbox-item {
+        padding-left: 60px;
     }
     .form__checkbox-wrap {
         margin-bottom: 40px;
@@ -428,13 +419,15 @@
         width: 300px;
         margin-left: 0;
         margin-right: 0;
+        margin-bottom: 45px;
     }
     .form__required {
         padding-right: 0;
         align-self: center;
         margin-right: 80px;
+        margin-bottom: 40px;
     }
-    .form__wrap-item--ord6 {
+    .form__wrap-item--order6 {
         .container;
     }
     .form__set-contact .form__set-item--tel,
@@ -470,16 +463,16 @@
         flex-wrap: wrap;
     }
     .form__wrap-item {
-        padding-left: 120px;
-        padding-right: 120px;
+        padding-left: 130px;
+        padding-right: 130px;
     }
-    .form__wrap-item--ord1 {
-        padding-left: 120px;
+    .form__wrap-item--order1 {
+        padding-left: 130px;
         padding-right: 0;
     }
-    .form__wrap-item--ord4 {
+    .form__wrap-item--order4 {
         padding-left: 0;
-        padding-right: 120px;
+        padding-right: 130px;
     }
     .form__subtitle { 
         padding-left: 200px;
@@ -489,29 +482,29 @@
     .form__subtitle-extra {
         display: inline-block;
     }
-    .form__set--nbr2 .form__input-title,
-    .form__set--nbr3 .form__input-title,
-    .form__set--nbr4 .form__input-title,
-    .form__set--nbr5 .form__input-title {
+    .form__set--namber2 .form__input-title,
+    .form__set--namber3 .form__input-title,
+    .form__set--namber4 .form__input-title,
+    .form__set--namber5 .form__input-title {
         padding-left: 20px;
         padding-right: 20px;
         margin-right: 0;
         margin-top: 0;
     }
-    .form__set--nbr1 {
-        width: 440px;
+    .form__set--namber1 {
+        width: 435px;
         padding-right: 0;
         padding-right: 30px;
         margin-top: 15px;
         margin-bottom: 30px;
     }
-    .form__set--nbr1 .form__item {
+    .form__set--namber1 .form__item {
         margin-bottom: 55px;
     }
-    .form__set--nbr1 .form__item--last-name {
+    .form__set--namber1 .form__item--last-name {
         margin-bottom: 10px;
     }
-    .form__set--nbr4 {
+    .form__set--namber4 {
         margin-right: 0;
         margin-bottom: 0;
         padding-left: 35px;
@@ -522,26 +515,29 @@
     .form__radio-item {
         margin-left: 40px;
     }
-    .form__set--nbr3 {
+    .form__set--namber3 {
         margin-right: 0;
         width: 820px;
         min-height: 70px;
-        padding-bottom: 5px;
+        padding-bottom: 15px;
     }
     .form__set-contact {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    .form__set--nbr3 .form__item {
+    .form__set--namber3 .form__item {
         margin-bottom: 20px;
         width: 350px;
         flex-grow: 0;
     }
-    .form__set--nbr3 .form__set-item {
+    .form__set--namber3 .form__set-item {
         margin-bottom: 0;
     }
-    .form__set--nbr2 {
+    .form__set--namber3 .form__set-item:last-child {
+        margin-bottom: 0;
+    }
+    .form__set--namber2 {
         width: 830px;
         min-height: 175px;
         padding-right: 45px;
@@ -558,21 +554,26 @@
     .form__checkbox-item {
         padding-left: 72px;
     }
-    .form__set--nbr5 {
+    .form__set--namber5 {
         width: 820px;
         min-height: 215px;
     }
-    .form__set--nbr5 .form__item {
+    .form__set--namber5 .form__item {
         width: 790px;
         min-height: 85px;
     }
+    .form__submit {
+        margin-bottom: 0;
+    }
     .form__required {
-        margin-right: 15px;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-top: 15px;
     }
     .form__required-extra {
         display: inline-block;
     }
-    .form__wrap-item--ord6 {
+    .form__wrap-item--order6 {
         margin-bottom: 0;
     }
 }

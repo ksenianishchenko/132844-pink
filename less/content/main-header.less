@@ -8,17 +8,16 @@
     padding-top: 21px;
     padding-bottom: 21px;
     border-bottom: none;
+    &--opened {
+        background-color: #283645;
+        padding-top: 21px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #000;
+    }
 }
 
 .main-header__wrapper {
     .container;
-}
-
-.main-header__menu--opened {
-    background-color: #283645;
-    padding-top: 21px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #000;
 }
 
 .main-header__logo {
@@ -27,12 +26,12 @@
 }
 
 @media @tablet {
-    .main-header__menu--closed {
+    .main-header__menu {
         padding-top: 30px;
         padding-bottom: 40px;
     }
     .main-header__menu--opened {
-        padding-top: 43px;
+        padding-top: 30px;
         padding-bottom: 40px;
     }
     .main-header__logo {
