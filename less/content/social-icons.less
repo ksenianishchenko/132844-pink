@@ -2,33 +2,29 @@
     display: inline-block;
     vertical-align: top;
     width: 45px;
-    height: 45px;
+    height: 32px;
     border: 3px solid #f1f2f3; 
     border-radius: 50%;
-}
-
-.social-icons__links {
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
     margin-right: 6px;
-}
-
-.social-icons__links--vk {
-    background-image: url('../../img/icon-twitter.svg');
-}
-
-.social-icons__links--fb {
-    background-image: url('../../img/icon-facebook.svg');
-}
-
-.social-icons__links--ytb {
-    background-image: url('../../img/icon-youtube.svg');
+    padding-top: 13px;
 }
 
 .social-icons__links:last-child {
     margin-right: 0;
 }
 
-@media @tablet {
-    
+.social-icons__color {
+    fill: #d22856;
+}
+
+.social-icons__links:hover {
+    border: 3px solid #283645;
+}
+
+.social-icons__links:active {
+    border: 3px solid #e9ebec;
+}
+
+.social-icons__color:active {
+    fill: #f1becc;
 }
