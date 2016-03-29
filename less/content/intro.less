@@ -108,7 +108,11 @@
     }
     .intro__wrapper--bgr {
         background: url('../../img/iphone-hand-mobile@2x.png') no-repeat 0 100%;
-        background-size: 516px;
+        background-size: 258px;
+    }
+    .intro--form .intro__wrapper--bgr,
+    .intro--photo .intro__wrapper--bgr {
+        background: none;
     }
 }
 
@@ -174,7 +178,12 @@
         .intro {
             background: url('../../img/iphone-hand-tablet@2x.png') no-repeat 85% 100%, 
            url('../../img/bg-back-tablet@2x.jpg') no-repeat 50% 0;
-            background-size: 1400px, cover;
+            background-size: 700px, cover;
+        }
+        .intro--form, 
+        .intro--photo {
+            background: url('../../img/bg-back-tablet@2x.jpg') no-repeat 50% 0;
+            background-size: cover;
         }
     }
 }
@@ -233,7 +242,12 @@
         .intro {
             background: url('../../img/iphone-hand-desktop@2x.png') no-repeat 85% 100%, 
            url('../../img/bg-back-tablet@2x.jpg') no-repeat 50% 0;
-            background-size: 2100px, cover;
+            background-size: 1050px, cover;
+        }
+        .intro--form, 
+        .intro--photo {
+            background: url('../../img/bg-back-tablet@2x.jpg') no-repeat 50% 0;
+            background-size: cover;
         }
     }
 }

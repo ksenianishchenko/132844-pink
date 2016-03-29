@@ -35,14 +35,25 @@
     font-weight: 300;
     font-size: 24px;
     color: @contact-text-color;
+    text-decoration: none;
+    &--link:hover {
+        color: #5d6873;
+        text-decoration: underline;
+    }
+    &--link:active {
+        color: #bec2c7;
+        text-decoration: none;
+    }
 }
 
 .contact__map {
-    width: 100%;
-    height: 200px;
     background: #eee url('../../img/bg-map.png') no-repeat 50% 50%;
     background-size: cover;
     position: relative;
+    iframe {
+        height: 200px;
+        width: 100%;
+    }
 }
 .contact__map:before {
     content: '';
@@ -106,7 +117,7 @@
     .contact__map:before {
         height: 75px;
     }
-    .contact__map {
+    .contact__map iframe {
         height: 375px;
     }
 }
@@ -149,7 +160,7 @@
     .contact__map:before {
         height: 90px;
     }
-    .contact__map {
+    .contact__map iframe {
         height: 490px;
     }
 }
