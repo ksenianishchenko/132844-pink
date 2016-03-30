@@ -1,6 +1,7 @@
 "use strict";
 
 module.exports = function(grunt) {
+
   require("load-grunt-tasks")(grunt);
 
   grunt.initConfig({
@@ -34,7 +35,7 @@ module.exports = function(grunt) {
     less: {
       style: {
         files: {
-          "build/css/style.css": "less/style.less"
+          "build/css/style.css": ["less/style.less"]
         }
       }
     },
@@ -91,7 +92,7 @@ module.exports = function(grunt) {
           ]
         },
         options: {
-          server: ".",
+          server: "build",
           watchTask: true,
           notify: false,
           open: true,
