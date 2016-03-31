@@ -11,7 +11,7 @@
     <div class="wrapper">
         <header class="main-header">
             <div class="main-header__wrapper">
-                <div class="main-header__menu main-header__menu--closed">
+                <div class="main-header__menu main-header__menu--opened">
                     <div class="main-header__logo">
                         <picture>
                             <source media="(min-width: 1200px)" 
@@ -21,11 +21,11 @@
                             srcset="img/logo-pink-white-tablet.svg"
                             />
                             <img class="main-header__img" src="img/logo-pink-white-mobile.svg" 
-                             title="Логотип компании" alt="Логотип компании"/>
+                             width="75" height="23" title="Логотип компании" alt="Логотип компании"/>
                         </picture>
                     </div>
                     <a href="#" class="main-nav__toggle-wrapper">
-                        <svg class="main-nav-toggle"   version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg class="main-nav-toggle hidden"   version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
                             <g id="miu">
                                 <g id="editor_list_view_hambuger_menu_glyph">
@@ -39,7 +39,7 @@
                                 </g>
                             </g>
                         </svg>
-                        <svg class="main-nav-toggle hidden main-nav-toggle--close" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg class="main-nav-toggle main-nav-toggle--close" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" preserveAspectRatio="none" xml:space="preserve">
                             <path class="main-nav-toggle__color" fill="#FFFFFF" d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0
                             c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313
@@ -49,7 +49,7 @@
                         </svg>
                     </a>
                 </div>
-                <nav class="main-nav hidden">
+                <nav class="main-nav">
                     <div class="main-nav__wrapper">
                         <ul class="main-nav__list">
                             <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
@@ -149,7 +149,7 @@
             <div class="reviews__wrapper"> 
                 <div class="reviews__slider">
                     <div class="reviews__left">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
                             <path   class="reviews__left-arrow" d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261
                             c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248
@@ -157,7 +157,7 @@
                         </svg>
                     </div>
                     <div class="reviews__right">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
                             <path class="reviews__right-arrow" d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012
                             c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248
@@ -291,9 +291,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contact__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.7720723780924!2d30.3205909!3d59.9359242!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f822ae5b9%3A0x9cd8ab24f19b7338!2sO&#39;Hooligans!5e0!3m2!1sru!2sus!4v1459136225716" allowfullscreen></iframe>
-            </div>
+            <div id="map" class="contact__map"></div>
         </section>
     </main>
 
@@ -305,14 +303,14 @@
                         <picture>
                             <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
                             <img src="img/logo-pink-blue-mobile.svg" 
-                            title="Логотип компании" alt="Логотип компании"/>
+                            width="150" height="41" title="Логотип компании" alt="Логотип компании"/>
                         </picture>
                     </a>
                 </section>
                 <section class="main-footer__social">
                     <div class="social-icons"> 
                         <a class="social-icons__links social-icons__links--tw" href="https://vk.com/htmlacademy">
-                        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                             <g id="W6EeEF_1_">
                                 <g>
@@ -327,7 +325,7 @@
                         </svg>
                         </a>
                         <a class="social-icons__links social-icons__links--fb" href="https://www.facebook.com/htmlacademy">
-                        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
                             <path class="social-icons__color" d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115
                             H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786
@@ -335,7 +333,7 @@
                         </svg>
                         </a>
                         <a class="social-icons__links social-icons__links--ytb" href="https://www.instagram.com/htmlacademy">
-                            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
                                 <path  class="social-icons__color" d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932
                                 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
@@ -346,7 +344,7 @@
                 <section class="main-footer__copyright">
                     <span class="main-footer__copyright-text">Разработано:</span>
                     <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-                        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
                             <path class="main-footer__copyright-logo" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
                             l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5
@@ -360,6 +358,7 @@
             </div>
         </div>
     </footer>
-    <script src="/js/script.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
   </body>
 </html>

@@ -5,6 +5,11 @@ document.addEventListener("DOMContentLoaded", function(){
 
     toggleWrapper.addEventListener('click', function(event) {
         event.preventDefault();
+        toggleMenu();
+    });
+    
+    toggleMenu();
+    function toggleMenu(){
         var mainNav = document.querySelector(".main-nav");
         var visibleButton = document.querySelector(".main-nav-toggle:not(.hidden)");
         var hiddenButton = document.querySelector(".main-nav-toggle.hidden");
@@ -27,5 +32,29 @@ document.addEventListener("DOMContentLoaded", function(){
         else{
             visibleHeader.classList.add("main-header__menu--opened");
         }
-    });
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function(){
+    var centerLatLng = new google.maps.LatLng(59.936204,30.322786);
+
+var mapOptions = {
+
+zoom: 18,
+
+center: centerLatLng,
+
+scrollwheel: false,
+
+mapTypeId: google.maps.MapTypeId.ROADMAP
+
+};
+
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                var image = 'img/icon-map-marker.svg';
+                var marker = new google.maps.Marker({
+                    position: centerLatLng,
+                    map: map,
+                    icon: image
+                });
 });
