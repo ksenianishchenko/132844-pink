@@ -34,18 +34,21 @@ document.addEventListener("DOMContentLoaded", function(){
         headerWrapper.classList.remove(toDelete);
     }
     
-    var centerLatLng = new google.maps.LatLng(59.936204,30.322786);
-    var mapOptions = {
-        zoom: 18,
-        center: centerLatLng,
-        scrollwheel: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-    var image = "img/icon-map-marker.svg";
-    var marker = new google.maps.Marker({
-        position: centerLatLng,
-        map: map,
-        icon: image
-    });
+    var mapElement = document.getElementById('map');
+    if (mapElement && google) {
+        var centerLatLng = new google.maps.LatLng(59.936204,30.322786);
+        var mapOptions = {
+            zoom: 18,
+            center: centerLatLng,
+            scrollwheel: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        var image = "img/icon-map-marker.svg";
+        var marker = new google.maps.Marker({
+            position: centerLatLng,
+            map: map,
+            icon: image
+        });
+    }
 });
