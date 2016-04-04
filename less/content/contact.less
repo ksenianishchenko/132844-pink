@@ -35,15 +35,27 @@
     font-weight: 300;
     font-size: 24px;
     color: @contact-text-color;
+    text-decoration: none;
+    &--link:hover {
+        color: #5d6873;
+        text-decoration: underline;
+    }
+    &--link:active {
+        color: #bec2c7;
+        text-decoration: none;
+    }
 }
 
 .contact__map {
-    width: 100%;
-    height: 200px;
-    background: #eee url('../../img/bg-map.png') no-repeat 50% 50%;
-    background-size: cover;
+    background: url('../../img/icon-map-marker.svg') no-repeat 50% 50%, url('../../img/bg-map.png') no-repeat 50% 50%;
+    background-size: 37px, cover;
     position: relative;
+    height: 200px;
+    width: 100%;
 }
+
+
+
 .contact__map:before {
     content: '';
     position: absolute;

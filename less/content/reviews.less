@@ -126,6 +126,7 @@
         position: absolute;
         top: 23px;
         display: block;
+        cursor: pointer;
     }
     .reviews__left {
         left: 130px;
@@ -133,16 +134,16 @@
     .reviews__right {
         right: 130px;
     }
-    .reviews__left-arrow,
-    .reviews__right-arrow {
+    .reviews__left .reviews__left-arrow,
+    .reviews__right .reviews__right-arrow {
         fill: #bec2c7;
     }
-    .reviews__left-arrow:hover,
-    .reviews__right-arrow:hover {
+    .reviews__left:hover .reviews__left-arrow,
+    .reviews__right:hover .reviews__right-arrow {
         fill: #7e868f;
     }
-    .reviews__left-arrow:active,
-    .reviews__right-arrow:active {
+    .reviews__left:active .reviews__left-arrow,
+    .reviews__right:active .reviews__right-arrow {
         fill: #e9ebec;
     }
     .reviews__title {
