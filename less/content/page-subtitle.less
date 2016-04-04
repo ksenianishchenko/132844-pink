@@ -1,0 +1,73 @@
+.page__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: @main-text-color;
+    text-align: center;
+    &--form {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 38px;
+    }
+    &-extra {
+        display: none;
+    }
+    &--photo {
+        padding-left: 43px;
+        padding-right: 43px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    &--bottom {
+        padding-top: 20px;
+        padding-bottom: 42px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+
+@media @tablet {
+    .page__subtitle {
+        font-size: 18px;
+        &--form {
+            padding-left: 75px;
+            padding-right: 75px;
+            margin-bottom: 75px;
+        }
+        &-extra {
+            display: block;
+        }
+        &--photo {
+            padding-left: 120px;
+            padding-right: 120px;
+            padding-top: 90px;
+            padding-bottom: 80px;
+        }
+        &--bottom {
+            padding-top: 45px;
+            padding-bottom: 70px;
+        }
+    }
+}
+
+@media @desktop {
+    .page__subtitle { 
+        &--form {
+            padding-left: 200px;
+            padding-right: 200px;
+            margin-bottom: 70px;
+        }
+        &-extra {
+            display: inline-block;
+        }
+        &--photo {
+            padding-bottom: 90px;
+            padding-left: 300px;
+            padding-right: 300px;
+        }
+        &--bottom {
+            padding-top: 6px;
+            padding-bottom: 65px;
+        }
+    }
+}

@@ -8,21 +8,6 @@
     position: relative;
 }
 
-.form__subtitle {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-    color: @main-text-color;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 38px;
-}
-
-.form__subtitle-extra {
-    display: none;
-}
-
 .form__set {
     padding-left: 20px;
     padding-right: 20px;
@@ -70,25 +55,25 @@
     outline: none;
 }
 
-.form__set--namber1 {
+.form__set--number1 {
     min-height: 370px;
 }
 
-.form__set--namber2 {
+.form__set--number2 {
     min-height: 595px;
 }
 
-.form__set--namber3 {
+.form__set--number3 {
     padding-top: 35px;
     min-height: 245px;
 }
 
-.form__set--namber4 {
+.form__set--number4 {
     padding-top: 38px;
     min-height: 290px;
 }
 
-.form__set--namber5 {
+.form__set--number5 {
     min-height: 270px;
 }
 
@@ -96,28 +81,28 @@
     background-color: #f2f2f2;
 }
 
-.form__set--namber2 .form__input-title {
+.form__set--number2 .form__input-title {
     padding-left: 18px;
     padding-right: 18px;
     margin-left: 0;
     padding-top: 30px; 
 }
-.form__set--namber3 legend {
+.form__set--number3 legend {
     display: none;
 }
 
-.form__set--namber4 .form__input-title {
+.form__set--number4 .form__input-title {
     margin-bottom: 0;
     padding-top: 35px; 
 }
 
-.form__set--namber5 .form__input-title {
+.form__set--number5 .form__input-title {
     margin-bottom: 15px;
     margin-left: 0;
     padding-top: 55px;
 }
 
-.form__set--namber5 .form__item {
+.form__set--number5 .form__item {
     min-height: 165px;
 }
 
@@ -231,6 +216,7 @@
     width: 280px;
     background-color: #2aab6d;
     border: 1px solid #2aab6d;
+    border-radius: 3px;
     font-weight: 400;
     font-size: 18px;
     color: #fff;
@@ -239,14 +225,16 @@
     padding-bottom: 20px;
     margin-bottom: 40px;
     margin-top: 8px;
-}
-
-.form__submit:hover {
-    background-color: #1c9b5e;
-}
-
-.form__submit:active {
-    color: #61b98f;
+    &:hover {
+        background-color: #1c9b5e;
+    }
+    &:active {
+        color: #61b98f;
+    }
+    &:disabled {
+        color: #fff;
+        background-color: #e5e5e5;
+    }
 }
 
 .form__submit:hover,
@@ -379,15 +367,6 @@
         padding-left: 0;
         padding-right: 0;
     }
-    .form__subtitle {
-        font-size: 18px;
-        padding-left: 75px;
-        padding-right: 75px;
-        margin-bottom: 75px;
-    }
-    .form__subtitle-extra {
-        display: block;
-    }
     .form__set-item {
         display: flex;
         flex-direction: row;
@@ -404,68 +383,68 @@
     .form__wrap-item--color2 {
         background-color: #fff;
     }
-    .form__set--namber2 .form__input-title,
-    .form__set--namber3 .form__input-title,
-    .form__set--namber4 .form__input-title,
-    .form__set--namber5 .form__input-title {
+    .form__set--number2 .form__input-title,
+    .form__set--number3 .form__input-title,
+    .form__set--number4 .form__input-title,
+    .form__set--number5 .form__input-title {
         padding-top: 0; 
         padding-left: 30px;
         padding-right: 30px;
     }
-    .form__set--namber3 legend {
+    .form__set--number3 legend {
         display: block;
     }
-    .form__set--namber2,
-    .form__set--namber3,
-    .form__set--namber4,
-    .form__set--namber5 {
+    .form__set--number2,
+    .form__set--number3,
+    .form__set--number4,
+    .form__set--number5 {
         padding-left: 55px;
         padding-right: 55px;
     }
-    .form__set--namber4 {
+    .form__set--number4 {
         min-height: 255px;
         margin-bottom: 55px;
     }
-    .form__set--namber1 {
+    .form__set--number1 {
         min-height: 320px;
         border: none;
         margin-bottom: 10px;
     }
-    .form__set--namber3 {
+    .form__set--number3 {
         min-height: 190px;
         margin-bottom: 58px;
     }
-    .form__set--namber2 {
+    .form__set--number2 {
         min-height: 550px;
         margin-bottom: 55px;
     }
-    .form__set--namber5 {
+    .form__set--number5 {
         min-height: 290px;
         padding-bottom: 10px;
         margin-bottom: 55px;
     }
-    .form__set--namber3 .form__set-item {
+    .form__set--number3 .form__set-item {
         display: flex;
         flex-direction: column;
         margin-bottom: 35px;
     }
-    .form__set--namber3 .form__set-item:last-child {
+    .form__set--number3 .form__set-item:last-child {
         margin-bottom: 20px;
     }
-    .form__set--namber3 .form__input-title {
+    .form__set--number3 .form__input-title {
         order: 2;
         margin-top: 0;
         margin-bottom: 0;
         padding-left: 13px;
     } 
-    .form__set--namber3 .form__item {
+    .form__set--number3 .form__item {
         margin-bottom: 16px;
         width: 470px;
     }
-    .form__set--namber5 .form__input-title {
+    .form__set--number5 .form__input-title {
         margin-bottom: 36px;
     }
-    .form__set--namber5 .form__item {
+    .form__set--number5 .form__item {
         width: 470px;
         min-height: 150px;
         margin-bottom: 10px;
@@ -586,37 +565,29 @@
         padding-left: 0;
         padding-right: 130px;
     }
-    .form__subtitle { 
-        padding-left: 200px;
-        padding-right: 200px;
-        margin-bottom: 70px;
-    }
-    .form__subtitle-extra {
-        display: inline-block;
-    }
-    .form__set--namber2 .form__input-title,
-    .form__set--namber3 .form__input-title,
-    .form__set--namber4 .form__input-title,
-    .form__set--namber5 .form__input-title {
+    .form__set--number2 .form__input-title,
+    .form__set--number3 .form__input-title,
+    .form__set--number4 .form__input-title,
+    .form__set--number5 .form__input-title {
         padding-left: 20px;
         padding-right: 20px;
         margin-right: 0;
         margin-top: 0;
     }
-    .form__set--namber1 {
+    .form__set--number1 {
         width: 435px;
         padding-right: 0;
         padding-right: 30px;
         margin-top: 15px;
         margin-bottom: 30px;
     }
-    .form__set--namber1 .form__item {
+    .form__set--number1 .form__item {
         margin-bottom: 55px;
     }
-    .form__set--namber1 .form__item--last-name {
+    .form__set--number1 .form__item--last-name {
         margin-bottom: 10px;
     }
-    .form__set--namber4 {
+    .form__set--number4 {
         margin-right: 0;
         margin-bottom: 0;
         padding-left: 35px;
@@ -627,29 +598,29 @@
     .form__radio-item {
         margin-left: 40px;
     }
-    .form__set--namber3 {
+    .form__set--number3 {
         margin-right: 0;
         width: 820px;
         min-height: 70px;
-        padding-bottom: 15px;
+        padding-bottom: 17px;
     }
     .form__set-contact {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    .form__set--namber3 .form__item {
-        margin-bottom: 20px;
+    .form__set--number3 .form__item {
+        margin-bottom: 18px;
         width: 350px;
         flex-grow: 0;
     }
-    .form__set--namber3 .form__set-item {
+    .form__set--number3 .form__set-item {
         margin-bottom: 0;
     }
-    .form__set--namber3 .form__set-item:last-child {
+    .form__set--number3 .form__set-item:last-child {
         margin-bottom: 0;
     }
-    .form__set--namber2 {
+    .form__set--number2 {
         width: 830px;
         min-height: 175px;
         padding-right: 45px;
@@ -666,11 +637,11 @@
     .form__checkbox-item {
         padding-left: 72px;
     }
-    .form__set--namber5 {
+    .form__set--number5 {
         width: 820px;
         min-height: 215px;
     }
-    .form__set--namber5 .form__item {
+    .form__set--number5 .form__item {
         width: 790px;
         min-height: 85px;
     }
@@ -696,6 +667,9 @@
         width: 780px;
         top: 785px;
         left: 210px;
+    }
+    .form__popup-wrapper {
+        width: 460px;
     }
     .form__popup-accept .form__popup-wrapper {
         width: 780px;

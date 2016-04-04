@@ -33,13 +33,25 @@
 }
 
 .main-footer__logo {
-    padding-left: 63px;
+    padding-left: 23px;
     width: 226px;
 }
 
 .main-footer__logo-box {
     display: block;
     text-decoration: none;
+}
+
+.main-footer__logo:active .main-footer__img-color {
+    opacity: 0.3;
+}
+
+.main-footer__logo:hover .main-footer__img-color {
+    fill: #d22856;
+}
+
+.main-footer__img--desktop {
+    display: none;
 }
 
 .main-footer__social {
@@ -128,5 +140,11 @@
     .main-footer__copyright-text {
         font-size: 18px;
         margin-right: 0;
+    }
+    .main-footer__img--desktop {
+        display: block;
+    }
+    .main-footer__img--mobile {
+        display: none;
     }
 }

@@ -21,22 +21,35 @@
 }
 
 .price__wrapper {
-    .container;
+    .container-fluid;
+    position: relative;
+    min-height: 380px;
+    overflow: hidden;
+}
+
+.price__slider {
+    width: 850px;
+    position: absolute;
+    left: -265px;
 }
 
 .price__slider-item {
-    padding-left: 20px;
-    padding-right: 20px;
+    /*padding-left: 20px;
+    padding-right: 20px;*/
     margin-bottom: 30px;
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    margin-left: -1px;
 }
-
+/*
 .price__slider-item:nth-child(1) {
     display: none;
 }
 
 .price__slider-item:nth-child(3) {
     display: none;
-}
+}*/
 
 .price__list {
     list-style: none;
@@ -54,9 +67,14 @@
     padding-bottom: 20px;
     padding-left: 20px;
     border: 2px solid #e5e5e5;
+    border-right: none;
     border-bottom: none;
     position: relative;
     background-color: #fff;
+}
+
+.price__slider-item:last-child .price__offer {
+        border-right: 2px solid #e5e5e5;
 }
 
 .price__offer:last-child {
@@ -82,22 +100,26 @@
     background: transparent url('../../img/icon-no.svg') no-repeat 50% 50%;
 }
 
-.price__offer--title {
+.price__offer-title {
     background-color: #283645;
     color: #fff;
     font-weight: 700;
     font-size: 18px;
     text-align: center;
-    padding-right: 20px;
+    padding: 20px;
     width: 240px;
     position: relative;
+    text-transform: uppercase;
+    border: 2px solid #e5e5e5;
+    border-right: none;
+    border-bottom: none;
 }
 
 .price__offer--title:after {
     display: none;
 }
 
-.price__offer--hit:before {
+.price__offer-hit:before {
     content:'';
     display: block;
     width: 74px;
@@ -122,8 +144,11 @@
         padding-top: 35px;
         min-height: 290px;
     }
+    .price__wrapper {
+        .container;
+    }
     .price__slider {
-        position: relative;
+        position: static;
         padding-left: 197px;
         padding-right: 37px;
     }
@@ -133,13 +158,7 @@
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 0;
-        margin-left: -4px;
-    }
-    .price__slider-item:nth-child(1) {
-        display: inline-block;
-    }
-    .price__slider-item:nth-child(3) {
-        display: inline-block;
+        width: auto;
     }
     .price__list {
         font-size: 0;
@@ -148,7 +167,8 @@
         height: 54px;
         top: -54px;
     }
-    .price__offer {
+    .price__offer,
+    .price__offer-title {
         width: 154px;
         padding-left: 0;
         padding-top: 19px;
@@ -156,9 +176,7 @@
         min-height: 6px;
         border-left: none;
     }
-    .price__offer--title {
-        width: 154px;
-        padding-left: 0;
+    .price__offer-title {
         padding-right: 0;
         font-size: 16px;
         padding-top: 17px;
@@ -167,7 +185,7 @@
     .price__offer-name {
         font-size: 18px;
     }
-    .price__offer--hit:before {
+    .price__offer-hit:before {
         width: 70px;
         height: 70px;
     }
@@ -182,16 +200,16 @@
         display: block;
         position: absolute;
         left: -157px;
-        top: -2px;
+        top: -3px;
         font-size: 14px;
         text-transform: none;
         border: 2px solid #e5e5e5;
         border-bottom: 1px solid #e5e5e5;
         box-sizing: border-box;
-        width: 160px;
-        height: 50px;
+        width: 157px;
+        height: 49px;
         padding-left: 20px;
-        padding-top: 13px;
+        padding-top: 12px;
         background-color: #fff;
     }
     .price__slider-item:first-child .price__item-text:last-child {
@@ -226,8 +244,7 @@
         font-size: 18px;
         padding-top: 15px;
     }
-    .price__offer--title {
-        width: 236px;
+    .price__offer-title {
         font-size: 18px;
         padding-bottom: 19px;
         padding-top: 19px;
@@ -235,7 +252,8 @@
     .price__offer-name {
         font-size: 24px;
     }
-    .price__offer {
+    .price__offer,
+    .price__offer-title {
         width: 234px;
         min-height: 18px;
         padding-top: 20px;
@@ -245,7 +263,7 @@
         top: 8px;
         right: 95px;
     }
-    .price__offer--hit:before {
+    .price__offer-hit:before {
         width: 74px;
         height: 74px;
     }

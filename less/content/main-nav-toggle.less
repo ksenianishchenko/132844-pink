@@ -1,0 +1,33 @@
+.main-nav-toggle {
+    text-align: right;
+    width: 55px;
+    height: 26px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    &--close {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.main-nav__toggle-wrapper:hover .main-nav-toggle__color {
+    fill: #d22856;
+}
+
+.main-nav__toggle-wrapper:active .main-nav-toggle__color {
+    fill: rgba(210,40,86,0.3);
+}
+
+@media @tablet {
+    .main-nav-toggle {
+        right: 40px;
+        top: 40px;
+    }
+}
+
+@media @desktop {
+    .main-nav-toggle {
+        display: none;
+    }
+}

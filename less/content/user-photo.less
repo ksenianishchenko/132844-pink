@@ -2,23 +2,9 @@
     .container;
 }
 
-.user-photo__subtitle {
-    font-family: 'Open Sans Regular', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-    padding-left: 43px;
-    padding-right: 43px;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    line-height: 30px;
-}
-
-.user-photo__subtitle--bottom {
-    padding-top: 20px;
-    padding-bottom: 42px;
-    padding-left: 35px;
-    padding-right: 35px;
+.user-photo {
+    display: flex;
+    flex-direction: column;
 }
 
 .user-photo__review {
@@ -51,7 +37,6 @@
 .user-photo__box-text {
     display: block;
     background-color: #d22856;
-    font-family: 'Open Sans Bold', sans-serif;
     font-weight: 700;
     font-size: 12px;
     color: #fff;
@@ -75,7 +60,6 @@
 
 .user-photo__comment {
     background-color: #f2f2f2;
-    font-family: 'Open Sans Regular', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -83,18 +67,20 @@
     padding-top: 18px;
     padding-bottom: 19px;
     padding-left: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .user-photo__name {
-    font-family: 'Open Sans Bold', sans-serif;
     font-weight: 700;
+    width: 100px;
 }
 
 .user-photo__time {
-    font-family: 'Open Sans Light', sans-serif;
     font-weight: 300;
     font-size: 12px;
     text-transform: uppercase;
+    width: 150px;
 }
 
 .user-photo__text {
@@ -103,7 +89,6 @@
 }
 
 .user-photo__like {
-    font-family: 'Open Sans Regular', sans-serif;
     font-weight: 400;
     font-size: 12px;
     text-transform: uppercase;
@@ -126,13 +111,6 @@
 }
 
 @media @tablet {
-    .user-photo__subtitle {
-        font-size: 18px;
-        padding-left: 120px;
-        padding-right: 120px;
-        padding-top: 90px;
-        padding-bottom: 80px;
-    }
     .user-photo__review {
         padding-left: 0;
         padding-right: 0;
@@ -145,6 +123,18 @@
     .user-photo__box {
         width: 300px;
         height: 301px;
+    }
+    .user-photo__wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .user-photo__comment {
+        padding-left: 27px;
+        padding-right: 27px;
+        padding-top: 22px;
+        padding-bottom: 15px;
     }
     .user-photo__review--panorama .user-photo__box {
         width: 100%;
@@ -174,12 +164,6 @@
         top: 57px;
         right: 43px;
     }
-    .user-photo__comment {
-        padding-left: 27px;
-        padding-right: 27px;
-        padding-top: 22px;
-        padding-bottom: 15px;
-    }
     .user-photo__like {
         padding-left: 0;
         margin-bottom: 5px;
@@ -197,28 +181,14 @@
     .user-photo__wrap .user-photo__review {
         width: 300px;
     }
-    .user-photo__wrap {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+    
     .user-photo__text {
         min-height: 55px;
         margin-bottom: 7px;
     }
-    .user-photo__subtitle--bottom {
-        padding-top: 45px;
-        padding-bottom: 70px;
-    }
 }
 
 @media @desktop {
-    .user-photo__subtitle {
-        padding-bottom: 90px;
-        padding-left: 300px;
-        padding-right: 300px;
-    }
     .user-photo__wrap {
         padding-left: 130px;
         padding-right: 130px;
@@ -254,9 +224,5 @@
     }
     .user-photo__review {
         margin-bottom: 52px;
-    }
-    .user-photo__subtitle--bottom {
-        padding-top: 6px;
-        padding-bottom: 65px;
     }
 }
