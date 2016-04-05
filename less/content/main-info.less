@@ -71,12 +71,16 @@
     font-size: 14px;
     line-height: 24px;
 }
-@media (min-resolution: 144dpi),
-       (min-resolution: 1.5dppx) {
-     .main-info__bottom {
-        background: @main-info-color url('../../img/iphone-screen-mobile@2x.png') no-repeat 50% 110%;
+
+@media @mobile {
+    @media (min-resolution: 144dpi),
+           (min-resolution: 1.5dppx) {
+         .main-info__bottom {
+            background: @main-info-color url('../../img/iphone-screen-mobile@2x.png') no-repeat 50% 110%;
+    }
+    }
 }
-}
+
 @media @tablet {
     .main-info {
         padding-top: 22px;
@@ -122,7 +126,7 @@
             height: 480px;
             bottom: 0;
             left: 40px;
-            background: transparent url('../../img/iphone-screen-mobile.png') no-repeat 50% 0;
+            background: transparent url('../../img/iphone-screen-tablet-3@1x.png') no-repeat 50% 0;
             background-size: 270px;
         }
     }
@@ -139,7 +143,7 @@
     @media (min-resolution: 144dpi),
        (min-resolution: 1.5dppx) {
         .main-info__bottom {
-        background: @main-info-color url('../../img/iphone-screen-mobile@2x.png') no-repeat 50% 110%;
+        background: @main-info-color url('../../img/iphone-screen-tablet-3@2x.png') no-repeat 50% 110%;
         }
     }
 }
@@ -196,12 +200,27 @@
         font-size: 30px;
         line-height: 30px;
         padding-left: 40px;
-        padding-right: 45px;
+        padding-right: 46px;
         margin-bottom: 24px;
     }
+    .main-info__short--mobile1 {
+        .main-info__text {
+            padding-left: 26px;
+            padding-right: 34px;
+        }
+    }
+    .main-info__short--mobile3 
+        .main-info__title {
+        padding-left: 43px;
+        padding-right: 40px;
+        .main-info__text {
+            padding-left: 36px;
+            padding-right: 36px;
+        }
+    }
     .main-info__text {
-        padding-left: 28px;
-        padding-right: 35px;
+        padding-left: 37px;
+        padding-right: 34px;
         font-size: 18px;
         line-height: 30px;
     }

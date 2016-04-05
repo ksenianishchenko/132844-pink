@@ -182,16 +182,16 @@
                 <div class="form__wrap-item form__wrap-item--color1 form__wrap-item--order1">
                     <div class="form__set form__set--number1">
                         <div class="form__set-item">
-                            <label class="form__input-title form__input-title--left">Имя:</label>
-                            <input class="form__item" type="text" name="name" placeholder="Введите ваше имя">
+                            <label class="form__input-title form__input-title--left" for="name">Имя:</label>
+                            <input id="name" class="form__item" type="text" name="name" placeholder="Введите ваше имя">
                         </div>
                         <div class="form__set-item">
-                            <label class="form__input-title form__input-title--left">Фамилия:</label>
-                            <input class="form__item" type="text" name="name" placeholder="Укажите фамилию">
+                            <label class="form__input-title form__input-title--left" for="last-name">Фамилия:</label>
+                            <input id="last-name" class="form__item" type="text" name="name" placeholder="Укажите фамилию">
                         </div>
                         <div class="form__set-item">
-                            <label class="form__input-title form__input-title--left">Отчество:</label>
-                            <input class="form__item form__item--last-name" type="text" name="name" placeholder="Ну и отчество тоже">
+                            <label class="form__input-title form__input-title--left" for="middle-name">Отчество:</label>
+                            <input id="middle-name" class="form__item form__item--last-name" type="text" name="name" placeholder="Ну и отчество тоже">
                         </div>
                     </div>
                 </div>
@@ -254,12 +254,12 @@
                         </legend>
                         <div class="form__set-contact">
                             <div class="form__set-item form__set-item--tel">
-                                <label class="form__input-title form__input-title--left">Номерок телефончика</label>
-                                <input class="form__item" type="tel" name="phone" placeholder="Номер, пожалуйста">
+                                <label class="form__input-title form__input-title--left" for="tel-number">Номерок телефончика</label>
+                                <input id="tel-number" class="form__item" type="tel" name="phone" placeholder="Номер, пожалуйста">
                             </div>
                             <div class="form__set-item form__set-item--email">
-                                <label class="form__input-title form__input-title--left">Адресок почты</label>
-                                <input class="form__item" type="email" name="email" placeholder="E-mail, пожалуйста">
+                                <label class="form__input-title form__input-title--left" for="email-address">Адресок почты</label>
+                                <input id="email-address" class="form__item" type="email" name="email" placeholder="E-mail, пожалуйста">
                             </div>
                         </div>
                     </fieldset>
@@ -337,7 +337,7 @@
         </form>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer main-footer--form">
         <div class="main-footer__wrapper">
             <div class="main-footer__inner">
                 <section class="main-footer__logo">
